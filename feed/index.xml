@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mechatronics Project Site</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Tue, 19 Jan 2016 07:44:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>Media Coverage</title>
+		<link>/2013/07/09/media-coverage/</link>
+		<pubDate>Tue, 09 Jul 2013 07:02:39 +0000</pubDate>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=711</guid>
+		<description><![CDATA[We&#8217;ve had a bit of press since we built this quadcopter! Here are a few of the sites we&#8217;ve been featured on. Ars Technica DIY Drones Thingiverse]]></description>
+				<content:encoded><![CDATA[<p>We&#8217;ve had a bit of press since we built this quadcopter! Here are a few of the sites we&#8217;ve been featured on.</p>
+<p><a href="http://arstechnica.com/information-technology/2013/05/11-arduino-projects-that-require-major-hacking-skills-or-a-bit-of-insanity/">Ars Technica</a><br />
+<a href="http://diydrones.com/profiles/blogs/another-3d-printed-quadcopter-design">DIY Drones</a><br />
+<a href="http://www.thingiverse.com/thing:22537">Thingiverse</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Welcome Students &#038; Enthusiasts!</title>
+		<link>/2012/05/07/welcome-thingiverse-visitors/</link>
+		<comments>/2012/05/07/welcome-thingiverse-visitors/#comments</comments>
+		<pubDate>Mon, 07 May 2012 22:40:38 +0000</pubDate>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=696</guid>
+		<description><![CDATA[This is a project website for a group who took a Mechatronics course (SEng 466) at the University of Victoria in Victoria, BC. We designed, built, and programmed a quadcopter using Solidworks, a MakerBot 3D printer, and a modified version &#8230; <a href="/2012/05/07/welcome-thingiverse-visitors/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>This is a project website for a group who took a <a href="http://webhome.csc.uvic.ca/~mcheng/466/spring.2012/index.html">Mechatronics course</a> (SEng 466) at the <a href="http://www.uvic.ca/">University of Victoria </a>in Victoria, BC. We designed, built, and programmed a quadcopter using Solidworks, a MakerBot 3D printer, and a modified version of the <a href="http://www.aeroquad.com/">AeroQuad software</a>.</p>
+<p>If you have any comments or questions, feel free to leave a comment on this post or anywhere else on this site.</p>
+<p><a title="Project 1" href="/project-1/">Project 1</a> details a preliminary project not having to do with the quadcopter.</p>
+<p><a title="Project 2" href="/project-2/">Project 2 </a>explains most details about the mechanical design of the quadcopter frame.</p>
+<p><a title="Project 3" href="/project-3/">Project 3</a> shows some modifications we made to the AeroQuad software and some demonstration videos of the copter flying.</p>
+<p>Thanks for visiting!</p>
+]]></content:encoded>
+			<wfw:commentRss>/2012/05/07/welcome-thingiverse-visitors/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>Welcome to our SEng466 project site</title>
+		<link>/2012/01/25/welcome/</link>
+		<comments>/2012/01/25/welcome/#comments</comments>
+		<pubDate>Wed, 25 Jan 2012 07:13:56 +0000</pubDate>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">/?p=10</guid>
+		<description><![CDATA[You have reached the project website of Anderson Li, Chris Rennie, and Garrett Owen for SEng466 (Mechatronics) at the University of Victoria. This site will detail 3 projects over the term.  The first being a ball floating apparatus built using two Arduino boards, and the &#8230; <a href="/2012/01/25/welcome/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>You have reached the project website of <a href="http://therobotfish.wordpress.com/about/">Anderson Li</a>, Chris Rennie, and <a href="http://garretto.net/">Garrett Owen</a> for <a href="http://webhome.csc.uvic.ca/~mcheng/466/spring.2012/index.html">SEng466</a> (Mechatronics) at the <a href="http://www.uvic.ca/">University of Victoria</a>. This site will detail 3 projects over the term.  The first being a ball floating apparatus built using two Arduino boards, and the final two having to do with the design and construction of an autonomous quad copter.  Whoever you are, a future student, instructor, or mechatronics enthusiast, we hope you find this site informational and useful.</p>
+<p><!--Here, we embark on a mission of unknown consequences; we cannot know for sure the results of our experimentation.  We intend to be the masters of our creations, but how will our creations master us?  While the intentions of our projects are clear, the ontological ramifications are blurry.  Wires will be soldered, microcontrollers programmed, machinery put into motion.  Will it change the world?  Probably not.  Will it change how we perceive and interact with our realities?  Indubitably.  This is SEng 466.--></p>
+]]></content:encoded>
+			<wfw:commentRss>/2012/01/25/welcome/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

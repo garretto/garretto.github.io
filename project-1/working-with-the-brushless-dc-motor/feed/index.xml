@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Working with the Brushless DC Motor</title>
+	<atom:link href="/project-1/working-with-the-brushless-dc-motor/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: attef</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-70862</link>
+		<dc:creator><![CDATA[attef]]></dc:creator>
+		<pubDate>Wed, 14 Oct 2015 11:48:27 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-70862</guid>
+		<description><![CDATA[I get an error in the program… in motorSetSpeed(motor_current_speed + increment);
+}]]></description>
+		<content:encoded><![CDATA[<p>I get an error in the program… in motorSetSpeed(motor_current_speed + increment);<br />
+}</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: adris</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-69839</link>
+		<dc:creator><![CDATA[adris]]></dc:creator>
+		<pubDate>Mon, 03 Aug 2015 05:20:35 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-69839</guid>
+		<description><![CDATA[hi my project is the BLDC Motor so pls any idea..thanks]]></description>
+		<content:encoded><![CDATA[<p>hi my project is the BLDC Motor so pls any idea..thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Maks</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-60723</link>
+		<dc:creator><![CDATA[Maks]]></dc:creator>
+		<pubDate>Fri, 19 Dec 2014 09:15:52 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-60723</guid>
+		<description><![CDATA[&#038;gt is &#062;,
+&#038;lt is &#060;
+
+replace them in ur code]]></description>
+		<content:encoded><![CDATA[<p>&amp;gt is &gt;,<br />
+&amp;lt is &lt;</p>
+<p>replace them in ur code</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sootona</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-53150</link>
+		<dc:creator><![CDATA[Sootona]]></dc:creator>
+		<pubDate>Thu, 09 Oct 2014 10:27:01 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-53150</guid>
+		<description><![CDATA[I get an error in the program... What the mean &#038;gt??? // if (speed &#038;gt ; MOTOR_MAX_SPEED)]]></description>
+		<content:encoded><![CDATA[<p>I get an error in the program&#8230; What the mean &amp;gt??? // if (speed &amp;gt ; MOTOR_MAX_SPEED)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: balakumar</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-48742</link>
+		<dc:creator><![CDATA[balakumar]]></dc:creator>
+		<pubDate>Mon, 21 Jul 2014 06:20:46 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-48742</guid>
+		<description><![CDATA[hi my project is the BLDC Motor so pls any idea..............]]></description>
+		<content:encoded><![CDATA[<p>hi my project is the BLDC Motor so pls any idea&#8230;&#8230;&#8230;&#8230;..</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: EDGAH SIMIYU MASINDE</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-46270</link>
+		<dc:creator><![CDATA[EDGAH SIMIYU MASINDE]]></dc:creator>
+		<pubDate>Fri, 16 May 2014 09:26:32 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-46270</guid>
+		<description><![CDATA[it is a wonderful project.how can i be tought how to program an ic?
+best regards, EDGAH.]]></description>
+		<content:encoded><![CDATA[<p>it is a wonderful project.how can i be tought how to program an ic?<br />
+best regards, EDGAH.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Garrett</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-4646</link>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+		<pubDate>Mon, 22 Oct 2012 02:03:38 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-4646</guid>
+		<description><![CDATA[Hey Willi, you don&#039;t actually need it.  That was a generic header file for the .c file of the same name created by my IDE.  I&#039;ve removed that include for clarity.]]></description>
+		<content:encoded><![CDATA[<p>Hey Willi, you don&#8217;t actually need it.  That was a generic header file for the .c file of the same name created by my IDE.  I&#8217;ve removed that include for clarity.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Willi</title>
+		<link>/project-1/working-with-the-brushless-dc-motor/#comment-4507</link>
+		<dc:creator><![CDATA[Willi]]></dc:creator>
+		<pubDate>Wed, 17 Oct 2012 09:05:19 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=101#comment-4507</guid>
+		<description><![CDATA[Hey, 
+Where can I find the file Motor_Test.h? 
+Thanks
+Best Regards Willi]]></description>
+		<content:encoded><![CDATA[<p>Hey,<br />
+Where can I find the file Motor_Test.h?<br />
+Thanks<br />
+Best Regards Willi</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

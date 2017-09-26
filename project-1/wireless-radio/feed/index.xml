@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Wireless Radio</title>
+	<atom:link href="/project-1/wireless-radio/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Mayra</title>
+		<link>/project-1/wireless-radio/#comment-53646</link>
+		<dc:creator><![CDATA[Mayra]]></dc:creator>
+		<pubDate>Wed, 15 Oct 2014 08:15:20 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=78#comment-53646</guid>
+		<description><![CDATA[Hey there, I think your blog might be having browser compatibility issues.
+
+When I look at your blog site in Safari, it looks fine but when opening in Internet Explorer, it has some 
+overlapping. I just wanted to give you a quick heads up!
+Other then that, awesome blog!]]></description>
+		<content:encoded><![CDATA[<p>Hey there, I think your blog might be having browser compatibility issues.</p>
+<p>When I look at your blog site in Safari, it looks fine but when opening in Internet Explorer, it has some<br />
+overlapping. I just wanted to give you a quick heads up!<br />
+Other then that, awesome blog!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: faramarz</title>
+		<link>/project-1/wireless-radio/#comment-29210</link>
+		<dc:creator><![CDATA[faramarz]]></dc:creator>
+		<pubDate>Sun, 08 Sep 2013 08:34:03 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=78#comment-29210</guid>
+		<description><![CDATA[how can i use xbee to control quadcopter ? is there any chance to work ??]]></description>
+		<content:encoded><![CDATA[<p>how can i use xbee to control quadcopter ? is there any chance to work ??</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Garrett</title>
+		<link>/project-1/wireless-radio/#comment-14223</link>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2013 18:16:07 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=78#comment-14223</guid>
+		<description><![CDATA[According to the data sheet:
+Software selectable channel from 2400MHz to 2525MHz (125 Selectable channels).]]></description>
+		<content:encoded><![CDATA[<p>According to the data sheet:<br />
+Software selectable channel from 2400MHz to 2525MHz (125 Selectable channels).</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Garrett</title>
+		<link>/project-1/wireless-radio/#comment-14222</link>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+		<pubDate>Thu, 31 Jan 2013 18:14:12 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=78#comment-14222</guid>
+		<description><![CDATA[This actually isn&#039;t a controller; it&#039;s a wireless radio that can transfer digital data which I hacked to control the copter eventually. Technically, there are no channels in the way you are thinking, only different addresses.  I would not recommend it to control a quad copter in general, but it was what we had to work with.]]></description>
+		<content:encoded><![CDATA[<p>This actually isn&#8217;t a controller; it&#8217;s a wireless radio that can transfer digital data which I hacked to control the copter eventually. Technically, there are no channels in the way you are thinking, only different addresses.  I would not recommend it to control a quad copter in general, but it was what we had to work with.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: michael</title>
+		<link>/project-1/wireless-radio/#comment-14140</link>
+		<dc:creator><![CDATA[michael]]></dc:creator>
+		<pubDate>Wed, 30 Jan 2013 14:47:36 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=78#comment-14140</guid>
+		<description><![CDATA[sir how many channels does this controller have?]]></description>
+		<content:encoded><![CDATA[<p>sir how many channels does this controller have?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

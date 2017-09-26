@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Arduino Eclipse Development Environment for Mac OS X</title>
+	<atom:link href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: 12ヶ月前、アカザのコーニングはメルボルン運転フェラーリ初もぎ取る大会冠。ウブロスーパーコピー今年から見れば、オーストラリアの全体の2008フォーミュラ1シーズンは、4位のタグホイ</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-72865</link>
+		<dc:creator><![CDATA[12ヶ月前、アカザのコーニングはメルボルン運転フェラーリ初もぎ取る大会冠。ウブロスーパーコピー今年から見れば、オーストラリアの全体の2008フォーミュラ1シーズンは、4位のタグホイ]]></dc:creator>
+		<pubDate>Wed, 09 Mar 2016 10:06:37 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-72865</guid>
+		<description><![CDATA[&lt;strong&gt;12ヶ月前、アカザのコーニングはメルボルン運転フェラーリ初もぎ取る大会冠。ウブロスーパーコピー今年から見れば、オーストラリアの全体の2008フォーミュラ1シーズンは、4位のタグホイヤー大使得意満面にかけているタグホイヤーの代表。&lt;/strong&gt;
+
+]]></description>
+		<content:encoded><![CDATA[<p><strong>12ヶ月前、アカザのコーニングはメルボルン運転フェラーリ初もぎ取る大会冠。ウブロスーパーコピー今年から見れば、オーストラリアの全体の2008フォーミュラ1シーズンは、4位のタグホイヤー大使得意満面にかけているタグホイヤーの代表。</strong></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Jantje</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-68917</link>
+		<dc:creator><![CDATA[Jantje]]></dc:creator>
+		<pubDate>Tue, 02 Jun 2015 10:28:48 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-68917</guid>
+		<description><![CDATA[I (jantje) strongly advice to install the product (nightly version for sure if you are a mac user) which you can find on http://eclipse.baeyens.it/ by selecting install at the top of the page.]]></description>
+		<content:encoded><![CDATA[<p>I (jantje) strongly advice to install the product (nightly version for sure if you are a mac user) which you can find on <a href="http://eclipse.baeyens.it/" rel="nofollow">http://eclipse.baeyens.it/</a> by selecting install at the top of the page.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Don Slattery</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-68897</link>
+		<dc:creator><![CDATA[Don Slattery]]></dc:creator>
+		<pubDate>Mon, 01 Jun 2015 23:02:08 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-68897</guid>
+		<description><![CDATA[It appears that installing the plugin fails.  Is there a workaround for this?
+
+An error occurred while collecting items to be installed
+session context was:(profile=epp.package.cpp, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+Artifact not found: http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar.
+http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar
+Artifact not found: http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar.
+http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar
+Artifact not found: http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar.
+http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar
+Artifact not found: http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar.
+http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar
+Artifact not found: http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar.
+http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar
+Artifact not found: http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar.
+http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar
+Artifact not found: http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar.
+http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar]]></description>
+		<content:encoded><![CDATA[<p>It appears that installing the plugin fails.  Is there a workaround for this?</p>
+<p>An error occurred while collecting items to be installed<br />
+session context was:(profile=epp.package.cpp, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).<br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: lode</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-55326</link>
+		<dc:creator><![CDATA[lode]]></dc:creator>
+		<pubDate>Fri, 31 Oct 2014 23:51:06 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-55326</guid>
+		<description><![CDATA[I had the same error.Resolved by:
+window-&#062;preferences-&#062;Arduino-&#062;Arduino 
+
+check: Use Arduino IDE tools in Eclipse
+
+Then it uploads without a problem!]]></description>
+		<content:encoded><![CDATA[<p>I had the same error.Resolved by:<br />
+window-&gt;preferences-&gt;Arduino-&gt;Arduino </p>
+<p>check: Use Arduino IDE tools in Eclipse</p>
+<p>Then it uploads without a problem!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kalfsbeek</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-54377</link>
+		<dc:creator><![CDATA[Kalfsbeek]]></dc:creator>
+		<pubDate>Wed, 22 Oct 2014 18:43:17 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-54377</guid>
+		<description><![CDATA[Hi guys,
+
+When I try to compile the project on my mac this is the error i get; i&#039;m not sure where the solution is to be found, hope one of you can help me!
+
+avrdude: reading input file &quot;/Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex&quot;
+avrdude: can&#039;t open input file /Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex: No such file or directory
+avrdude: read from file &#039;/Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex&#039; failed
+
+Thanks a lot!!
+
+Arjan]]></description>
+		<content:encoded><![CDATA[<p>Hi guys,</p>
+<p>When I try to compile the project on my mac this is the error i get; i&#8217;m not sure where the solution is to be found, hope one of you can help me!</p>
+<p>avrdude: reading input file &#8220;/Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex&#8221;<br />
+avrdude: can&#8217;t open input file /Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex: No such file or directory<br />
+avrdude: read from file &#8216;/Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex&#8217; failed</p>
+<p>Thanks a lot!!</p>
+<p>Arjan</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: svenska casinon på nett</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-51167</link>
+		<dc:creator><![CDATA[svenska casinon på nett]]></dc:creator>
+		<pubDate>Sun, 07 Sep 2014 08:58:38 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-51167</guid>
+		<description><![CDATA[Fantastic site you have here but I was curious about if you knew of any user discussion forums that cover the same topics talked about here?
+I&#039;d really love to be a part of community where I can get opinions from other experienced people that share the 
+same interest. If you have any suggestions, please let me 
+know. Thank you!
+
+Visit my web blog - &lt;a href=&quot;http://casinopanatet.webnode.com&quot;/ rel=&quot;nofollow&quot;&gt;svenska casinon på nett&lt;/a&gt;]]></description>
+		<content:encoded><![CDATA[<p>Fantastic site you have here but I was curious about if you knew of any user discussion forums that cover the same topics talked about here?<br />
+I&#8217;d really love to be a part of community where I can get opinions from other experienced people that share the<br />
+same interest. If you have any suggestions, please let me<br />
+know. Thank you!</p>
+<p>Visit my web blog &#8211; <a href="http://casinopanatet.webnode.com/" rel="nofollow">svenska casinon på nett</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ladonna</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-50566</link>
+		<dc:creator><![CDATA[Ladonna]]></dc:creator>
+		<pubDate>Wed, 27 Aug 2014 16:12:49 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-50566</guid>
+		<description><![CDATA[I read a lot of interesting posts here. Probably you  spend a lot 
+of time writing, i know how to save you a lot of time, there 
+is an online tool that creates high quality, google friendly 
+posts in seconds, just search in google  - laranitas free content source]]></description>
+		<content:encoded><![CDATA[<p>I read a lot of interesting posts here. Probably you  spend a lot<br />
+of time writing, i know how to save you a lot of time, there<br />
+is an online tool that creates high quality, google friendly<br />
+posts in seconds, just search in google  &#8211; laranitas free content source</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Herramientas de Trabajo Colaborativo</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-49736</link>
+		<dc:creator><![CDATA[Herramientas de Trabajo Colaborativo]]></dc:creator>
+		<pubDate>Mon, 11 Aug 2014 18:16:04 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-49736</guid>
+		<description><![CDATA[Fabulous, what a website it is! This webpage gives helpful facts to us,
+keep it up.]]></description>
+		<content:encoded><![CDATA[<p>Fabulous, what a website it is! This webpage gives helpful facts to us,<br />
+keep it up.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: medicaloo.com</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-49557</link>
+		<dc:creator><![CDATA[medicaloo.com]]></dc:creator>
+		<pubDate>Tue, 05 Aug 2014 17:45:59 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-49557</guid>
+		<description><![CDATA[Great blog here! Also your web site loads up very fast! What 
+host are you using? Can I get your affiliate link to your host?
+I wish my web site loaded up as quickly as yours lol]]></description>
+		<content:encoded><![CDATA[<p>Great blog here! Also your web site loads up very fast! What<br />
+host are you using? Can I get your affiliate link to your host?<br />
+I wish my web site loaded up as quickly as yours lol</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Nannette</title>
+		<link>/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-48229</link>
+		<dc:creator><![CDATA[Nannette]]></dc:creator>
+		<pubDate>Sun, 06 Jul 2014 20:14:45 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=14#comment-48229</guid>
+		<description><![CDATA[I see a lot of interesting articles on your blog. You have to 
+spend a lot of time writing, i know how to save you a lot 
+of work, there is a tool that creates unique, google friendly articles in couple of seconds, just type in google  - laranita&#039;s free content 
+source]]></description>
+		<content:encoded><![CDATA[<p>I see a lot of interesting articles on your blog. You have to<br />
+spend a lot of time writing, i know how to save you a lot<br />
+of work, there is a tool that creates unique, google friendly articles in couple of seconds, just type in google  &#8211; laranita&#8217;s free content<br />
+source</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

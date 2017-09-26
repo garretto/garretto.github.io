@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Wiring Schematic</title>
+	<atom:link href="/project-3/wiring-schematic/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Fahad</title>
+		<link>/project-3/wiring-schematic/#comment-66857</link>
+		<dc:creator><![CDATA[Fahad]]></dc:creator>
+		<pubDate>Sun, 15 Feb 2015 20:04:59 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=379#comment-66857</guid>
+		<description><![CDATA[You are really help me with this schematic diagram :)
+Which baud rate you are used for 9 DOF ?
+
+Thanks]]></description>
+		<content:encoded><![CDATA[<p>You are really help me with this schematic diagram 🙂<br />
+Which baud rate you are used for 9 DOF ?</p>
+<p>Thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: continue</title>
+		<link>/project-3/wiring-schematic/#comment-43232</link>
+		<dc:creator><![CDATA[continue]]></dc:creator>
+		<pubDate>Sun, 09 Mar 2014 06:39:54 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=379#comment-43232</guid>
+		<description><![CDATA[Replay Value - After you beat the sport, will you need to participate in it again and again. Moreover, piece copy generally is a employees intensive and time-consuming job that can be considered a &#039;hard nut to crack&#039; feel for lots pupils.]]></description>
+		<content:encoded><![CDATA[<p>Replay Value &#8211; After you beat the sport, will you need to participate in it again and again. Moreover, piece copy generally is a employees intensive and time-consuming job that can be considered a &#8216;hard nut to crack&#8217; feel for lots pupils.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: anderson</title>
+		<link>/project-3/wiring-schematic/#comment-42646</link>
+		<dc:creator><![CDATA[anderson]]></dc:creator>
+		<pubDate>Sat, 22 Feb 2014 23:02:26 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=379#comment-42646</guid>
+		<description><![CDATA[I believe it was gschem on Linux. If you use windows, eagle pcb is a good alternative.]]></description>
+		<content:encoded><![CDATA[<p>I believe it was gschem on Linux. If you use windows, eagle pcb is a good alternative.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Ali Hamza</title>
+		<link>/project-3/wiring-schematic/#comment-42645</link>
+		<dc:creator><![CDATA[Ali Hamza]]></dc:creator>
+		<pubDate>Sat, 22 Feb 2014 22:45:31 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=379#comment-42645</guid>
+		<description><![CDATA[Which software have you used to create the schematics? I am really interested in it.]]></description>
+		<content:encoded><![CDATA[<p>Which software have you used to create the schematics? I am really interested in it.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: anderson</title>
+		<link>/project-3/wiring-schematic/#comment-28462</link>
+		<dc:creator><![CDATA[anderson]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 03:48:09 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=379#comment-28462</guid>
+		<description><![CDATA[Nice catch.  It should indeed be connected to Vin not 5V. My mistake.]]></description>
+		<content:encoded><![CDATA[<p>Nice catch.  It should indeed be connected to Vin not 5V. My mistake.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Rabin</title>
+		<link>/project-3/wiring-schematic/#comment-27439</link>
+		<dc:creator><![CDATA[Rabin]]></dc:creator>
+		<pubDate>Tue, 13 Aug 2013 18:13:31 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=379#comment-27439</guid>
+		<description><![CDATA[Is there any good reason of connecting VCC with battery 1 and 5V outlet of arduino? And since Vin[Arduino]  is connected to the power, how did you do for the power in Arduino.]]></description>
+		<content:encoded><![CDATA[<p>Is there any good reason of connecting VCC with battery 1 and 5V outlet of arduino? And since Vin[Arduino]  is connected to the power, how did you do for the power in Arduino.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Control flow in the Hover Station</title>
+	<atom:link href="/project-1/control-flow-in-the-hover-station/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Garrett</title>
+		<link>/project-1/control-flow-in-the-hover-station/#comment-23605</link>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+		<pubDate>Sun, 02 Jun 2013 18:08:45 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=113#comment-23605</guid>
+		<description><![CDATA[This section isn&#039;t about the quadcopter. It&#039;s part of project 1 where we built a ball floating device with an Arduino controller.]]></description>
+		<content:encoded><![CDATA[<p>This section isn&#8217;t about the quadcopter. It&#8217;s part of project 1 where we built a ball floating device with an Arduino controller.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Rabin</title>
+		<link>/project-1/control-flow-in-the-hover-station/#comment-23413</link>
+		<dc:creator><![CDATA[Rabin]]></dc:creator>
+		<pubDate>Wed, 29 May 2013 17:49:38 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=113#comment-23413</guid>
+		<description><![CDATA[In the beginning of the 2nd paragraph What ball r u talking about?]]></description>
+		<content:encoded><![CDATA[<p>In the beginning of the 2nd paragraph What ball r u talking about?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: chandu harsha vardhan</title>
+		<link>/project-1/control-flow-in-the-hover-station/#comment-4200</link>
+		<dc:creator><![CDATA[chandu harsha vardhan]]></dc:creator>
+		<pubDate>Wed, 26 Sep 2012 17:38:39 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=113#comment-4200</guid>
+		<description><![CDATA[i am feelin great to find this site . I want to construct a similar quadcopter as my final year project. Can some one please help me in doing this.? my email id is harsha397@gmail.com]]></description>
+		<content:encoded><![CDATA[<p>i am feelin great to find this site . I want to construct a similar quadcopter as my final year project. Can some one please help me in doing this.? my email id is <a href="mailto:harsha397@gmail.com">harsha397@gmail.com</a></p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: ESC Calibration &#038; Programming</title>
+	<atom:link href="/project-2/esc-calibration-programming/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Building your first neural network self driving car in Python &#124; BigSnarf blog</title>
+		<link>/project-2/esc-calibration-programming/#comment-73277</link>
+		<dc:creator><![CDATA[Building your first neural network self driving car in Python &#124; BigSnarf blog]]></dc:creator>
+		<pubDate>Mon, 08 Aug 2016 07:15:59 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-73277</guid>
+		<description><![CDATA[[&#8230;] /project-2/esc-calibration-programming/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] <a href="/project-2/esc-calibration-programming/" rel="nofollow">/project-2/esc-calibration-programming/</a> [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Bibliographie &#8211; TPE: Drone Distributeur</title>
+		<link>/project-2/esc-calibration-programming/#comment-72815</link>
+		<dc:creator><![CDATA[Bibliographie &#8211; TPE: Drone Distributeur]]></dc:creator>
+		<pubDate>Fri, 12 Feb 2016 08:10:14 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-72815</guid>
+		<description><![CDATA[[&#8230;] des ESC:/project-2/esc-calibration-programming/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] des ESC:<a href="/project-2/esc-calibration-programming/" rel="nofollow">/project-2/esc-calibration-programming/</a> [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: linkages</title>
+		<link>/project-2/esc-calibration-programming/#comment-71873</link>
+		<dc:creator><![CDATA[linkages]]></dc:creator>
+		<pubDate>Tue, 24 Nov 2015 11:15:21 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-71873</guid>
+		<description><![CDATA[as far as i know .. you cant. you need to swap a tri phase cables couple for that.]]></description>
+		<content:encoded><![CDATA[<p>as far as i know .. you cant. you need to swap a tri phase cables couple for that.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Shishir Gupta</title>
+		<link>/project-2/esc-calibration-programming/#comment-71857</link>
+		<dc:creator><![CDATA[Shishir Gupta]]></dc:creator>
+		<pubDate>Mon, 23 Nov 2015 20:30:12 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-71857</guid>
+		<description><![CDATA[How do I reverse the rotation direction with my esc? This code only gives one direction rotation for my motor.]]></description>
+		<content:encoded><![CDATA[<p>How do I reverse the rotation direction with my esc? This code only gives one direction rotation for my motor.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Kinetis Drone: Driving the Electronic Speed Controllers &#124; MCU on Eclipse</title>
+		<link>/project-2/esc-calibration-programming/#comment-70716</link>
+		<dc:creator><![CDATA[Kinetis Drone: Driving the Electronic Speed Controllers &#124; MCU on Eclipse]]></dc:creator>
+		<pubDate>Sun, 04 Oct 2015 19:20:51 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-70716</guid>
+		<description><![CDATA[[&#8230;] pulse width minimum and maxium value can be configured with a calibration routine (see /project-2/esc-calibration-programming/). For the quadrocopter I would like to use a range as big as possible between LOW and [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] pulse width minimum and maxium value can be configured with a calibration routine (see <a href="/project-2/esc-calibration-programming/" rel="nofollow">/project-2/esc-calibration-programming/</a>). For the quadrocopter I would like to use a range as big as possible between LOW and [&#8230;]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Pulkit</title>
+		<link>/project-2/esc-calibration-programming/#comment-70217</link>
+		<dc:creator><![CDATA[Pulkit]]></dc:creator>
+		<pubDate>Sat, 29 Aug 2015 11:29:06 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-70217</guid>
+		<description><![CDATA[Have you find solution?
+I have same problem for remaining 3 ESCs.]]></description>
+		<content:encoded><![CDATA[<p>Have you find solution?<br />
+I have same problem for remaining 3 ESCs.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Pulkit</title>
+		<link>/project-2/esc-calibration-programming/#comment-70216</link>
+		<dc:creator><![CDATA[Pulkit]]></dc:creator>
+		<pubDate>Sat, 29 Aug 2015 11:27:33 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-70216</guid>
+		<description><![CDATA[Have you find solution?
+I have same problem for remain 3 ESCs.]]></description>
+		<content:encoded><![CDATA[<p>Have you find solution?<br />
+I have same problem for remain 3 ESCs.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: mohsein fazareh</title>
+		<link>/project-2/esc-calibration-programming/#comment-68844</link>
+		<dc:creator><![CDATA[mohsein fazareh]]></dc:creator>
+		<pubDate>Thu, 28 May 2015 19:02:17 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-68844</guid>
+		<description><![CDATA[Hi
+Thank you for sharing your experiences and apologize for poor english I am writing in
+
+I have a question and that is, How can we calibrate it with a 500 Hz PWM like what we can generate through arduino hardware.
+to be more clear i want to run a brush less motor with hardware pwm on arduino
+so I need to calibrate it first but I dont know how
+I hope to find my answer here
+thank you again]]></description>
+		<content:encoded><![CDATA[<p>Hi<br />
+Thank you for sharing your experiences and apologize for poor english I am writing in</p>
+<p>I have a question and that is, How can we calibrate it with a 500 Hz PWM like what we can generate through arduino hardware.<br />
+to be more clear i want to run a brush less motor with hardware pwm on arduino<br />
+so I need to calibrate it first but I dont know how<br />
+I hope to find my answer here<br />
+thank you again</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: peter</title>
+		<link>/project-2/esc-calibration-programming/#comment-68527</link>
+		<dc:creator><![CDATA[peter]]></dc:creator>
+		<pubDate>Thu, 23 Apr 2015 12:11:49 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-68527</guid>
+		<description><![CDATA[I am having problem while throttling ,all ESC are calibrated at different values  ,motor 1 at max.1100microseconds ,min.700us.    Motor 2 at max.1590 ,motor 3 at max.1200,motor 4 at 1300. When i throttle motor start at asynchronous way,so quadcopter unbalance. So help me what to do]]></description>
+		<content:encoded><![CDATA[<p>I am having problem while throttling ,all ESC are calibrated at different values  ,motor 1 at max.1100microseconds ,min.700us.    Motor 2 at max.1590 ,motor 3 at max.1200,motor 4 at 1300. When i throttle motor start at asynchronous way,so quadcopter unbalance. So help me what to do</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: link</title>
+		<link>/project-2/esc-calibration-programming/#comment-60604</link>
+		<dc:creator><![CDATA[link]]></dc:creator>
+		<pubDate>Thu, 18 Dec 2014 14:43:37 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=275#comment-60604</guid>
+		<description><![CDATA[hi
+
+good guide ,
+don&#039;t understand, the process of calibration need to be done each time
+system is power up? calibration will be remembered?
+next time i power system I just need to set speed according to min and max limits settled during calibration?]]></description>
+		<content:encoded><![CDATA[<p>hi</p>
+<p>good guide ,<br />
+don&#8217;t understand, the process of calibration need to be done each time<br />
+system is power up? calibration will be remembered?<br />
+next time i power system I just need to set speed according to min and max limits settled during calibration?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

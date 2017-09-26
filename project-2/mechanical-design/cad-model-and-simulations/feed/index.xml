@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: CAD Models and Simulations</title>
+	<atom:link href="/project-2/mechanical-design/cad-model-and-simulations/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Omar Merhabi</title>
+		<link>/project-2/mechanical-design/cad-model-and-simulations/#comment-55534</link>
+		<dc:creator><![CDATA[Omar Merhabi]]></dc:creator>
+		<pubDate>Sun, 02 Nov 2014 23:12:57 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=346#comment-55534</guid>
+		<description><![CDATA[Do you know an Autodesk product similar to Solidworks Simulation?]]></description>
+		<content:encoded><![CDATA[<p>Do you know an Autodesk product similar to Solidworks Simulation?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: hs</title>
+		<link>/project-2/mechanical-design/cad-model-and-simulations/#comment-42896</link>
+		<dc:creator><![CDATA[hs]]></dc:creator>
+		<pubDate>Sat, 01 Mar 2014 15:50:48 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=346#comment-42896</guid>
+		<description><![CDATA[hello,
+highly inspired by the concept of quadcopter
+please post the solidworks file]]></description>
+		<content:encoded><![CDATA[<p>hello,<br />
+highly inspired by the concept of quadcopter<br />
+please post the solidworks file</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: masoud allahyari</title>
+		<link>/project-2/mechanical-design/cad-model-and-simulations/#comment-39892</link>
+		<dc:creator><![CDATA[masoud allahyari]]></dc:creator>
+		<pubDate>Mon, 09 Dec 2013 16:00:18 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=346#comment-39892</guid>
+		<description><![CDATA[Hi
+I&#039;m researching a possible source file solidworks
+Please email :allahyari.masoud@yahoo.com
+Thank]]></description>
+		<content:encoded><![CDATA[<p>Hi<br />
+I&#8217;m researching a possible source file solidworks<br />
+Please email :allahyari.masoud@yahoo.com<br />
+Thank</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: anderson</title>
+		<link>/project-2/mechanical-design/cad-model-and-simulations/#comment-28460</link>
+		<dc:creator><![CDATA[anderson]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 03:40:56 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=346#comment-28460</guid>
+		<description><![CDATA[A lot of people has been asking me for that lately. I will post them as soon as I have the time to. Meanwhile you  can check out the stl files from my thingiverse page: http://www.thingiverse.com/thing:22537]]></description>
+		<content:encoded><![CDATA[<p>A lot of people has been asking me for that lately. I will post them as soon as I have the time to. Meanwhile you  can check out the stl files from my thingiverse page: <a href="http://www.thingiverse.com/thing:22537" rel="nofollow">http://www.thingiverse.com/thing:22537</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: anderson</title>
+		<link>/project-2/mechanical-design/cad-model-and-simulations/#comment-28459</link>
+		<dc:creator><![CDATA[anderson]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 03:34:00 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=346#comment-28459</guid>
+		<description><![CDATA[The program I used is solidworks simulation.]]></description>
+		<content:encoded><![CDATA[<p>The program I used is solidworks simulation.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Thero</title>
+		<link>/project-2/mechanical-design/cad-model-and-simulations/#comment-27058</link>
+		<dc:creator><![CDATA[Thero]]></dc:creator>
+		<pubDate>Thu, 08 Aug 2013 10:56:00 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=346#comment-27058</guid>
+		<description><![CDATA[This is so inspirational..i want to do something as detailed as this..currently i&#039;m a student studying for a degree in Mechatronics Engineering..I want to do something as practical as this...i want to learn to use solidworks,make quadcopters,use servos,program mcu,gyros,control systems etc and what a better way to do it by doing this projects over the holidays..Do you mind sharing the solidworks files?]]></description>
+		<content:encoded><![CDATA[<p>This is so inspirational..i want to do something as detailed as this..currently i&#8217;m a student studying for a degree in Mechatronics Engineering..I want to do something as practical as this&#8230;i want to learn to use solidworks,make quadcopters,use servos,program mcu,gyros,control systems etc and what a better way to do it by doing this projects over the holidays..Do you mind sharing the solidworks files?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Quadcopter Software</title>
+	<atom:link href="/project-3/quadcopter-software/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Vignesh</title>
+		<link>/project-3/quadcopter-software/#comment-66194</link>
+		<dc:creator><![CDATA[Vignesh]]></dc:creator>
+		<pubDate>Sun, 25 Jan 2015 19:49:18 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=561#comment-66194</guid>
+		<description><![CDATA[please read a reference book such as &quot;Arduino Cookbook&quot;]]></description>
+		<content:encoded><![CDATA[<p>please read a reference book such as &#8220;Arduino Cookbook&#8221;</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: neil</title>
+		<link>/project-3/quadcopter-software/#comment-60217</link>
+		<dc:creator><![CDATA[neil]]></dc:creator>
+		<pubDate>Mon, 15 Dec 2014 16:11:25 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=561#comment-60217</guid>
+		<description><![CDATA[Can you send me your arduino code for quadcopter]]></description>
+		<content:encoded><![CDATA[<p>Can you send me your arduino code for quadcopter</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Rafi</title>
+		<link>/project-3/quadcopter-software/#comment-59173</link>
+		<dc:creator><![CDATA[Rafi]]></dc:creator>
+		<pubDate>Mon, 08 Dec 2014 04:58:47 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=561#comment-59173</guid>
+		<description><![CDATA[Just another thing I noticed.
+You wrote your arduino code in c?(I think)
+I would love to know how this works and maybe you could point me somewhere? I am not exactly a beginner in programming just more in arduino. I understand how to write a sketch well but I am kind of confused in how you made this work and also the things in github.
+Thanks!]]></description>
+		<content:encoded><![CDATA[<p>Just another thing I noticed.<br />
+You wrote your arduino code in c?(I think)<br />
+I would love to know how this works and maybe you could point me somewhere? I am not exactly a beginner in programming just more in arduino. I understand how to write a sketch well but I am kind of confused in how you made this work and also the things in github.<br />
+Thanks!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: thurein</title>
+		<link>/project-3/quadcopter-software/#comment-42657</link>
+		<dc:creator><![CDATA[thurein]]></dc:creator>
+		<pubDate>Sun, 23 Feb 2014 09:22:55 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=561#comment-42657</guid>
+		<description><![CDATA[I have my own GUI for tunning and Arduino code]]></description>
+		<content:encoded><![CDATA[<p>I have my own GUI for tunning and Arduino code</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

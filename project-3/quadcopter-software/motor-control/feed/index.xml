@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Motor Speed Control Hook</title>
+	<atom:link href="/project-3/quadcopter-software/motor-control/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: nikhil kulkarni</title>
+		<link>/project-3/quadcopter-software/motor-control/#comment-17570</link>
+		<dc:creator><![CDATA[nikhil kulkarni]]></dc:creator>
+		<pubDate>Thu, 07 Mar 2013 10:51:44 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=563#comment-17570</guid>
+		<description><![CDATA[hi guys  m making same project n i want circuit dig of remote control of
+ quad copter if any 1 have then plz mail me on my id bond7843@gmail.com]]></description>
+		<content:encoded><![CDATA[<p>hi guys  m making same project n i want circuit dig of remote control of<br />
+ quad copter if any 1 have then plz mail me on my id <a href="mailto:bond7843@gmail.com">bond7843@gmail.com</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Mihai</title>
+		<link>/project-3/quadcopter-software/motor-control/#comment-16288</link>
+		<dc:creator><![CDATA[Mihai]]></dc:creator>
+		<pubDate>Sat, 23 Feb 2013 10:54:09 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=563#comment-16288</guid>
+		<description><![CDATA[Hello guys!
+I have a BLDC motor equiped with an ESC. There is also an arduino Atmega 328 which I use to generate the pwm signal. I need to feed the ESC with a pwm of a 50 Hz frequency. I don’t know how could I set the exactly 50 Hz frequency. Any ideas? I was searching for two days and…nothing.]]></description>
+		<content:encoded><![CDATA[<p>Hello guys!<br />
+I have a BLDC motor equiped with an ESC. There is also an arduino Atmega 328 which I use to generate the pwm signal. I need to feed the ESC with a pwm of a 50 Hz frequency. I don’t know how could I set the exactly 50 Hz frequency. Any ideas? I was searching for two days and…nothing.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: mido</title>
+		<link>/project-3/quadcopter-software/motor-control/#comment-16280</link>
+		<dc:creator><![CDATA[mido]]></dc:creator>
+		<pubDate>Sat, 23 Feb 2013 07:21:06 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=563#comment-16280</guid>
+		<description><![CDATA[hi﻿ i am using Speed Controller for Brushless Motor for my quad copter the problem is 3 of them are starting at 60 % and one at 80 % and you know that it must start in the exact time and with the exact speed i need your help in that . thanks.]]></description>
+		<content:encoded><![CDATA[<p>hi﻿ i am using Speed Controller for Brushless Motor for my quad copter the problem is 3 of them are starting at 60 % and one at 80 % and you know that it must start in the exact time and with the exact speed i need your help in that . thanks.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Garrett</title>
+		<link>/project-3/quadcopter-software/motor-control/#comment-2441</link>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+		<pubDate>Fri, 13 Jul 2012 03:23:07 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=563#comment-2441</guid>
+		<description><![CDATA[Hi Victor,
+It depends on what kind of Microcontroller you are using (for how to control timers).  For Aeroquad the speed of the PWM signal sent to the electronic speed controllers is managed in Libraries/AQ_Motors/Motors_PWM_Timer.h for newer configurations.
+
+However, you will probably want to modify the Libraries/AQ_FlightControlProcessor/FlightControlOctoX.h file to account for a motor loss.  This sounds like a pretty difficult task.  You&#039;ll need to find a way to detect a motor failure, and then modify the flight processor calculations to account for the motor failure.  The math behind that is beyond me, but try asking in the forums at aeroquad.com.  Good luck!]]></description>
+		<content:encoded><![CDATA[<p>Hi Victor,<br />
+It depends on what kind of Microcontroller you are using (for how to control timers).  For Aeroquad the speed of the PWM signal sent to the electronic speed controllers is managed in Libraries/AQ_Motors/Motors_PWM_Timer.h for newer configurations.</p>
+<p>However, you will probably want to modify the Libraries/AQ_FlightControlProcessor/FlightControlOctoX.h file to account for a motor loss.  This sounds like a pretty difficult task.  You&#8217;ll need to find a way to detect a motor failure, and then modify the flight processor calculations to account for the motor failure.  The math behind that is beyond me, but try asking in the forums at aeroquad.com.  Good luck!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Victor</title>
+		<link>/project-3/quadcopter-software/motor-control/#comment-2375</link>
+		<dc:creator><![CDATA[Victor]]></dc:creator>
+		<pubDate>Thu, 12 Jul 2012 09:36:54 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=563#comment-2375</guid>
+		<description><![CDATA[hello guys,
+I need your help, I&#039;m working at a project with an octocopter that use parts from Aeroquad. What I have to do is to modify the source code in such way that if a motor fail the octocopter will be able to stay in air without falling or rolling. What file from the source code I have to modify? I&#039;m kind of new in this Aeroquad software and everything, maybe you can help me.
+
+Thank you]]></description>
+		<content:encoded><![CDATA[<p>hello guys,<br />
+I need your help, I&#8217;m working at a project with an octocopter that use parts from Aeroquad. What I have to do is to modify the source code in such way that if a motor fail the octocopter will be able to stay in air without falling or rolling. What file from the source code I have to modify? I&#8217;m kind of new in this Aeroquad software and everything, maybe you can help me.</p>
+<p>Thank you</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

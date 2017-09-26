@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Demonstration Videos</title>
+	<atom:link href="/project-3/project-3-demonstration-videos/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Group Project Site for SEng466 at the University of Victoria</description>
+	<lastBuildDate>Mon, 08 Aug 2016 07:15:59 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<item>
+		<title>By: Garrett</title>
+		<link>/project-3/project-3-demonstration-videos/#comment-40316</link>
+		<dc:creator><![CDATA[Garrett]]></dc:creator>
+		<pubDate>Wed, 18 Dec 2013 22:35:56 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=539#comment-40316</guid>
+		<description><![CDATA[See the link to Source Code in the side bar under project 3.]]></description>
+		<content:encoded><![CDATA[<p>See the link to Source Code in the side bar under project 3.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: vipul</title>
+		<link>/project-3/project-3-demonstration-videos/#comment-40232</link>
+		<dc:creator><![CDATA[vipul]]></dc:creator>
+		<pubDate>Tue, 17 Dec 2013 00:43:56 +0000</pubDate>
+		<guid isPermaLink="false">/?page_id=539#comment-40232</guid>
+		<description><![CDATA[hello,
+ can i get a complete source code for the quad please....thanks in advance...]]></description>
+		<content:encoded><![CDATA[<p>hello,<br />
+ can i get a complete source code for the quad please&#8230;.thanks in advance&#8230;</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Arduino Eclipse Development Environment for Mac OS X | Mechatronics Project Site</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/twentyeleven/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Arduino Eclipse Development Environment for Mac OS X Comments Feed" href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='jetpack_css-css'  href='/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-28621799-2', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.2" />
+<link rel="canonical" href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/" />
+<link rel='shortlink' href='http://wp.me/P2a9yP-e' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fproject-1%2Fsetting-up-the-arduino-eclipse-environment-on-mac-os-x-lion%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fproject-1%2Fsetting-up-the-arduino-eclipse-environment-on-mac-os-x-lion%2F&#038;format=xml" />
+<link rel="stylesheet" type="text/css" href="/wp-content/plugins/wp-code-highlight/css/wp-code-highlight.css" media="screen" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Arduino Eclipse Development Environment for Mac OS X" />
+<meta property="og:url" content="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/" />
+<meta property="og:description" content="This is a short guide on how to setup Eclipse for Mac OS X Lion (10.7) for use with Arduino in a relatively short amount of time.  Using this guide, Eclipse can be setup to program and download cod…" />
+<meta property="article:published_time" content="2012-01-25T07:18:34+00:00" />
+<meta property="article:modified_time" content="2016-01-19T07:44:40+00:00" />
+<meta property="og:site_name" content="Mechatronics Project Site" />
+<meta property="og:image" content="/wp-content/uploads/2012/01/arduino-ss.png" />
+<meta property="og:image:width" content="924" />
+<meta property="og:image:height" content="535" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery ');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+</head>
+
+<body class="page-template page-template-sidebar-page page-template-sidebar-page-php page page-id-14 page-child parent-pageid-12 single-author two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="/" rel="home">Mechatronics Project Site</a></span></h1>
+				<h2 id="site-description">Group Project Site for SEng466 at the University of Victoria</h2>
+			</hgroup>
+
+						<a href="/">
+									<img src="/wp-content/uploads/2012/04/cropped-render-1.jpg" width="1000" height="288" alt="Mechatronics Project Site" />
+							</a>
+			
+								<form method="get" id="searchform" action="/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+												<div class="menu"><ul>
+<li ><a href="/">Home</a></li><li class="page_item page-item-12 page_item_has_children current_page_ancestor current_page_parent"><a href="/project-1/">Project 1</a>
+<ul class='children'>
+	<li class="page_item page-item-14 current_page_item"><a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/">Arduino Eclipse Development Environment for Mac OS X</a></li>
+	<li class="page_item page-item-112"><a href="/project-1/component-based-design-and-process/">Component Oriented Design Process</a></li>
+	<li class="page_item page-item-113"><a href="/project-1/control-flow-in-the-hover-station/">Control flow in the Hover Station</a></li>
+	<li class="page_item page-item-91"><a href="/project-1/dc-motors/">DC Motors</a></li>
+	<li class="page_item page-item-137"><a href="/project-1/source-code/">Full Source Code</a></li>
+	<li class="page_item page-item-164"><a href="/project-1/logitech-game-pad/">Logitech Game Pad</a></li>
+	<li class="page_item page-item-37"><a href="/project-1/mechanical-design/">Mechanical Design</a></li>
+	<li class="page_item page-item-202"><a href="/project-1/project-video/">Project Video</a></li>
+	<li class="page_item page-item-83"><a href="/project-1/srf04-sonar/">SRF04 Sonar</a></li>
+	<li class="page_item page-item-78"><a href="/project-1/wireless-radio/">Wireless Radio</a></li>
+	<li class="page_item page-item-101"><a href="/project-1/working-with-the-brushless-dc-motor/">Working with the Brushless DC Motor</a></li>
+</ul>
+</li>
+<li class="page_item page-item-271 page_item_has_children"><a href="/project-2/">Project 2</a>
+<ul class='children'>
+	<li class="page_item page-item-301"><a href="/project-2/9-degrees-of-freedom-sensor/">9 Degrees of Freedom Sensor</a></li>
+	<li class="page_item page-item-275"><a href="/project-2/esc-calibration-programming/">ESC Calibration &#038; Programming</a></li>
+	<li class="page_item page-item-295 page_item_has_children"><a href="/project-2/mechanical-design/">Mechanical Design</a>
+	<ul class='children'>
+		<li class="page_item page-item-346"><a href="/project-2/mechanical-design/cad-model-and-simulations/">CAD Models and Simulations</a></li>
+		<li class="page_item page-item-357"><a href="/project-2/mechanical-design/manufacting-the-parts/">Manufacturing the Parts</a></li>
+		<li class="page_item page-item-361"><a href="/project-2/mechanical-design/assembly/">Assembly</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-506"><a href="/project-2/project-2-demonstration-video/">Project 2 Demonstration Video</a></li>
+	<li class="page_item page-item-499"><a href="/project-2/testing-hover-capability/">Testing Hover Capability</a></li>
+</ul>
+</li>
+<li class="page_item page-item-461 page_item_has_children"><a href="/project-3/">Project 3</a>
+<ul class='children'>
+	<li class="page_item page-item-539"><a href="/project-3/project-3-demonstration-videos/">Demonstration Videos</a></li>
+	<li class="page_item page-item-677"><a href="/project-3/motor-orientation/">Motor Orientations</a></li>
+	<li class="page_item page-item-572"><a href="/project-3/pid-tuning-flight-testing/">PID Tuning &#038; Flight Testing</a></li>
+	<li class="page_item page-item-569"><a href="/project-3/possible-improvements/">Possible Improvements</a></li>
+	<li class="page_item page-item-561 page_item_has_children"><a href="/project-3/quadcopter-software/">Quadcopter Software</a>
+	<ul class='children'>
+		<li class="page_item page-item-563"><a href="/project-3/quadcopter-software/motor-control/">Motor Speed Control Hook</a></li>
+		<li class="page_item page-item-582"><a href="/project-3/quadcopter-software/gamepad-control/">Remote Station &#038; Gamepad Control</a></li>
+		<li class="page_item page-item-698"><a href="/project-3/quadcopter-software/setup-video-demonstration/">Setup Video Demonstration</a></li>
+		<li class="page_item page-item-580"><a href="/project-3/quadcopter-software/wireless-radio/">Wireless Radio Hook</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-547"><a href="/project-3/troubleshooting/">Troubleshooting</a></li>
+	<li class="page_item page-item-379"><a href="/project-3/wiring-schematic/">Wiring Schematic</a></li>
+</ul>
+</li>
+</ul></div>
+			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-14" class="post-14 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Arduino Eclipse Development Environment for Mac OS X</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>This is a short guide on how to setup Eclipse for Mac OS X Lion (10.7) for use with <a href="http://arduino.cc/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://arduino.cc', 'Arduino');">Arduino</a> in a relatively short amount of time.  Using this guide, Eclipse can be setup to program and download code onto Arduino microcontrollers in about 15 minutes by using the <a href="http://www.baeyens.it/eclipse/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.baeyens.it/eclipse/', 'Arduino Eclipse Plugin');">Arduino Eclipse Plugin</a>.</p>
+<h2>Initial Steps</h2>
+<p>To begin, download the following:</p>
+<ul>
+<li><a href="http://www.eclipse.org/downloads/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.eclipse.org/downloads/', 'Eclipse IDE for C/C++ Developers');">Eclipse IDE for C/C++ Developers</a></li>
+<li><a href="http://arduino.cc/en/Main/Software" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://arduino.cc/en/Main/Software', 'Arduino IDE');">Arduino IDE</a> for Mac OS X (version 1.0 at time of writing)</li>
+</ul>
+<p>Installing Eclipse on Mac OS X is quite simple: extract the Eclipse package to the /Applications/ folder or another convenient location.  Then simply drag the Eclipse.app file to the dock from the /Applications/eclipse/ folder.</p>
+<p>Next, install the Arduino IDE.  Once again, this is just a matter of extracting the zip file somewhere and dragging the Arduino.app file to the Applications folder.</p>
+<h2>Installing the Arduino Eclipse Plugin</h2>
+<p><em>Note: If this part of the instructions seems to be outdated, head over <a href="http://www.baeyens.it/eclipse/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.baeyens.it/eclipse/', 'here');">here</a> and follow the instructions.  This is a modified version of those instructions specifically for Mac OS X and the plugin version 1.1.7. </em></p>
+<p>Now that Eclipse is installed, start it and choose a workspace (the default will work fine).  If this is the first time Eclipse has been opened, close the welcome screen.  Then, navigate to Help -&gt; Install New Software and add a new site: <a href="http://www.baeyens.it/eclipse/update" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.baeyens.it/eclipse/update', 'http://www.baeyens.it/eclipse/update');">http://www.baeyens.it/eclipse/update</a>.  Check the latest <strong>arduino eclipse extensions </strong>under <strong>arduino</strong> and click next.</p>
+<p>Finish going through the installation and restart eclipse when prompted at the end.</p>
+<h2>Configuration</h2>
+<p>The last part is merely a matter of configuration.  Eclipse should now be loaded with the workspace visible.  From the application menu, navigate to Eclipse -&gt; Preferences (shortcut command + ,) and then Arduino -&gt; Arduino in the Preferences pane.</p>
+<p>In order for Eclipse to use proper compilers and libraries for Arduino, the location of the Arduino IDE must be set.  Users familiar with Mac OS X may know that .app files are actually just containers for application files (right click on any app and choose <em>Show Package Contents </em>in Finder).  The files needed by the plugin are located in the Arduino.app container.  If the Arduino.app application was added to the /Applications/ folder simply copy and paste this path into <strong>Arduino IDE path</strong>:</p>
+<pre class="wp-code-highlight prettyprint">/Applications/Arduino.app/Contents/Resources/Java</pre>
+<p>If the Arduion.app application was installed to another location, simply modify this path appropriately.</p>
+<p><em>Note: Sometimes simply copying and pasting this path does not work, and the location must be browsed to instead.  In the Finder file browsing window, browse to this path directly by pressing <strong>command + shift + g</strong>.</em></p>
+<p><a href="/wp-content/uploads/2012/01/arduino-ss.png"><img class="alignnone size-full wp-image-23" title="arduino-ss" src="/wp-content/uploads/2012/01/arduino-ss.png" alt="" width="924" height="535" srcset="/wp-content/uploads/2012/01/arduino-ss.png 924w, /wp-content/uploads/2012/01/arduino-ss-300x173.png 300w, /wp-content/uploads/2012/01/arduino-ss-500x289.png 500w" sizes="(max-width: 924px) 100vw, 924px" /></a></p>
+<p>Next, in preferences move to <strong>AVRDude</strong> and copy this path into the <strong>AVRDude config file field</strong>. Once again, and from now on, modify the path if the Arduino.app was installed to another location.</p>
+<pre class="wp-code-highlight prettyprint">/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf</pre>
+<p><a href="/wp-content/uploads/2012/01/avrdude-ss.png"><img class="alignnone size-full wp-image-24" title="avrdude-ss" src="/wp-content/uploads/2012/01/avrdude-ss.png" alt="" width="921" height="534" srcset="/wp-content/uploads/2012/01/avrdude-ss.png 921w, /wp-content/uploads/2012/01/avrdude-ss-300x173.png 300w, /wp-content/uploads/2012/01/avrdude-ss-500x289.png 500w" sizes="(max-width: 921px) 100vw, 921px" /></a></p>
+<p>Now move to <strong>Paths </strong>and replace each path with the appropriate location listed below:</p>
+<p><em>AVR-GCC, GNU make</em>, and <em>AVRDude</em></p>
+<pre class="wp-code-highlight prettyprint">/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin</pre>
+<p><em>AVR Header Files</em></p>
+<pre class="wp-code-highlight prettyprint">/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/avr/include</pre>
+<p>Also be sure to check off <strong>Disable search for system paths at startup</strong> so these paths are not reset next time Eclipse is opened.</p>
+<p><a href="/wp-content/uploads/2012/01/paths-ss.png"><img class="alignnone size-full wp-image-25" title="paths-ss" src="/wp-content/uploads/2012/01/paths-ss.png" alt="" width="1017" height="536" srcset="/wp-content/uploads/2012/01/paths-ss.png 1017w, /wp-content/uploads/2012/01/paths-ss-300x158.png 300w, /wp-content/uploads/2012/01/paths-ss-500x263.png 500w" sizes="(max-width: 1017px) 100vw, 1017px" /></a></p>
+<h2>Additional Recommended Configuration</h2>
+<p>In Preferences, navigate to General -&gt; Workspace and check <strong>Save automatically before build</strong>.</p>
+<p>Under C/C++ -&gt; Indexer it may be necessary to check <strong>Index unused headers</strong> and <strong>Index source and header files opened in editor</strong>.  Some installations also do not seem to automatically index the HardwareSerial library, and Eclipse will mark it as not able to be found.  Therefore, under <strong>Files to index up-front</strong> append &#8220;HardwareSerial.h&#8221; onto the end without quotes.</p>
+<p>The Eclipse environment is now ready to create a new Arduino project.</p>
+<h2>Creating An Arduino Project In Eclipse</h2>
+<p>To start a new project using the plugin, go to File -&gt; New -&gt; Project&#8230; in Eclipse and select <strong>New Arduino sketch</strong> from the Arduino folder.  Click next and name the project, then click next again and choose the Arduino Board that will be programmed from the drop down menu.  Then type in the port where the board is located (e.g. /dev/tty.usbmodemfa131).  To find out what port the board is using, plug it into the computer and check using the Arduino IDE application or open terminal and type the following command to list external devices.</p>
+<pre class="wp-code-highlight prettyprint">ls /dev/tty.*</pre>
+<p>If the board is not available, leave the port field blank or use a placeholder value to change later.  Click finish and the new project will be created.</p>
+<h2>Importing A Library</h2>
+<p>Another great feature of the Arduino Eclipse plugin is the ability to import libraries quickly.  To import a library to a project, right click on it in the project explorer and choose import.  Under the Arduino folder, choose <strong>Import a arduino library in the current project </strong>and choose next.  Next, browse to or type the location of the library to import (e.g. the Servo library is located at /Applications/Arduino.app/Contents/Resources/Java/libraries/Servo) and click finish.</p>
+<p>To use the library, simply include it in the project header file (e.g. #include &#8220;Servo.h&#8221;).  Note that code copied from the Arduino IDE using an imported library will need to be changed so that the include statements use double quotes (&#8220;&#8221;) instead of angle brackets (&lt;&gt;).</p>
+<h2>Indexer Problems</h2>
+<p>If, at this point, Eclipse is underlining a lot of code in red, save and build the project first.  If it is still underlining code in red, then try going to <strong>Preferences</strong>, C/C++ Settings -&gt; Indexer and uncheck <strong>Enable indexer</strong>, click Apply, recheck it, and click OK.  This should re-run the indexer.  It may also help to open header or cpp files that contain objects or functions that cannot be found when the indexer is re-run.  This seems to be a bug in the Eclipse indexer for Mac.</p>
+<p>For all other troubles, <a href="http://arduino.cc/forum/index.php/topic,70547.0.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://arduino.cc/forum/index.php/topic,70547.0.html', 'here');">here</a> is a link to a thread that was very useful.</p>
+<h2>Conclusion</h2>
+<p>After reading this short tutorial, you should be able to configure an Arduino programming environment in Eclipse for Mac OS X relatively quickly.  A lot of credit is due to <a href="http://arduino.cc/forum/index.php?action=profile;u=14686" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://arduino.cc/forum/index.php?action=profile;u=14686', 'Jantje');">Jantje</a> for making such a fantastic plugin!  Please leave comments if you appreciate this tutorial or have suggestions.</p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-14 -->
+
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			61 thoughts on &ldquo;<span>Arduino Eclipse Development Environment for Mac OS X</span>&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-2">
+		<article id="comment-2" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://eclips.baeyens.it/' rel='external nofollow' class='url'>Jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-2"><time datetime="2012-01-29T19:19:45+00:00">January 29, 2012 at 7:19 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks for this document. I&#8217;ll have a look to modify the plugin so he provides the correct configuration.<br />
+Best regards<br />
+Jante</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4">
+		<article id="comment-4" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://dattein.com/' rel='external nofollow' class='url'>Franklin Dattein</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-4"><time datetime="2012-02-09T00:27:27+00:00">February 9, 2012 at 12:27 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks, that was very useful to me. </p>
+<p>Do you know whether it is possible to monitor the serial port, like we do with the Arduino IDE?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-5">
+		<article id="comment-5" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Garrett</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-5"><time datetime="2012-02-09T04:29:53+00:00">February 9, 2012 at 4:29 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I&#8217;m glad to hear it worked for you.</p>
+<p>Unfortunately I don&#8217;t know of a way to monitor the serial port from within Eclipse.  However, you can still use the Serial Monitor program in the Arduino IDE just fine.  I personally use CoolTerm  [http://www.macupdate.com/app/mac/31352/coolterm] for Mac because it&#8217;s very clean and simple to use.  Just make sure you set the baud rate in your code and in CoolTerm to match.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-3" id="li-comment-6">
+		<article id="comment-6" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://dattein.com/' rel='external nofollow' class='url'>Franklin Dattein</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-6"><time datetime="2012-02-09T22:39:05+00:00">February 9, 2012 at 10:39 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks for the hint again. I have just installed Coolterm.</p>
+<p>Just one more question: I have got a few libraries with a ifdef checking Arduino&#8217;s version and I am using Arduino V1. However, when I build it from Eclipse it seems to not pick up this variable. Thus, I guess I have to specify that somehow. Would you know how?</p>
+<p>That is the example.</p>
+<p>#if defined(ARDUINO) &amp;&amp; ARDUINO &gt;= 100<br />
+  #include &#8220;Arduino.h&#8221;<br />
+#else<br />
+  #include &#8220;WProgram.h&#8221;<br />
+#endif<br />
+#include </p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even depth-3" id="li-comment-24415">
+		<article id="comment-24415" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/e54ba49e3593933ef473cd13e518ee62?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e54ba49e3593933ef473cd13e518ee62?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">YouDoMeIDoYou</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-24415"><time datetime="2013-06-18T15:36:38+00:00">June 18, 2013 at 3:36 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>thanks a lot you saved my day &#8211; serial output after hours of research!</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-7">
+		<article id="comment-7" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://dattein.com/' rel='external nofollow' class='url'>Franklin Dattein</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-7"><time datetime="2012-02-10T00:03:11+00:00">February 10, 2012 at 12:03 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Please, ignore the question below. It seems that the plugin was having a hangover. It is all working now. Thanks.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-8">
+		<article id="comment-8" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2b25095a2e4a0aa4dfe0cd854006bb8e?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://dattein.com/' rel='external nofollow' class='url'>Franklin Dattein</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-8"><time datetime="2012-02-10T00:30:15+00:00">February 10, 2012 at 12:30 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I have just realized that my problem is actually related to imported libraries. For some reason the libraries are not compiling because they can&#8217;t find Arduino.h. The files created by the Arduino plugin can find it, tough.<br />
+Any clues?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt depth-2" id="li-comment-2959">
+		<article id="comment-2959" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/3fd72c1e4c816c088d5ff4b5667fdafc?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3fd72c1e4c816c088d5ff4b5667fdafc?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Seth</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-2959"><time datetime="2012-07-24T18:27:36+00:00">July 24, 2012 at 6:27 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>How to import the library like : serial ?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-admin bypostauthor even thread-odd thread-alt depth-1" id="li-comment-9">
+		<article id="comment-9" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Garrett</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-9"><time datetime="2012-02-10T04:36:01+00:00">February 10, 2012 at 4:36 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Make sure your libraries use double quotes instead of angular brackets.<br />
+#include &#8220;Arduino.h&#8221; instead of #include &lt;Arduino.h&gt;</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-18">
+		<article id="comment-18" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9e650c769dd13e41173f6ed19ee4d3f5?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9e650c769dd13e41173f6ed19ee4d3f5?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Amir</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-18"><time datetime="2012-02-19T16:40:58+00:00">February 19, 2012 at 4:40 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi thanks for the tutorial, </p>
+<p>I did everything mentioned above. My program compiles fine, with no errors/warning. However, when I try to upload it to my Arduino Uno i get the following Error &#8220;avrdude: ser_open(): can&#8217;t open device &#8220;411&#8221;: No such file or directory&#8221; </p>
+<p>I&#8217;ve checked and the device is connected via port 411.</p>
+<p>Any suggestions?</p>
+<p><a href="http://picpaste.com/pics/e2c8889e9f9f326118b2cb0f40729d4e.1329698291.png" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://picpaste.com/pics/e2c8889e9f9f326118b2cb0f40729d4e.1329698291.png', 'http://picpaste.com/pics/e2c8889e9f9f326118b2cb0f40729d4e.1329698291.png');" rel="nofollow">http://picpaste.com/pics/e2c8889e9f9f326118b2cb0f40729d4e.1329698291.png</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-19">
+		<article id="comment-19" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Garrett</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-19"><time datetime="2012-02-19T19:32:04+00:00">February 19, 2012 at 7:32 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hmm, why are you using a port number 411?  You need to use the path to the Arduino board.  It should be something like /dev/tty.usbmodemfa131</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-3" id="li-comment-20">
+		<article id="comment-20" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9e650c769dd13e41173f6ed19ee4d3f5?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9e650c769dd13e41173f6ed19ee4d3f5?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Amir</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-20"><time datetime="2012-02-20T12:10:36+00:00">February 20, 2012 at 12:10 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>no, it shoes port 411 for me. &#8220;/dev/tty.usbmodem411&#8221;</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-4" id="li-comment-21">
+		<article id="comment-21" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9e650c769dd13e41173f6ed19ee4d3f5?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9e650c769dd13e41173f6ed19ee4d3f5?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Amir</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-21"><time datetime="2012-02-20T12:15:23+00:00">February 20, 2012 at 12:15 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Okay, I figured out what I was doing wrong. I was entering &#8220;411&#8221; for port instead of &#8220;/dev/tty.usbmodem411&#8221;!</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-205">
+		<article id="comment-205" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/6478033753f1ad60dc4df024c7562212?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/6478033753f1ad60dc4df024c7562212?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Giuseppe</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-205"><time datetime="2012-03-27T11:04:35+00:00">March 27, 2012 at 11:04 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>simply great,<br />
+thx  a lot</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-214">
+		<article id="comment-214" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/578a21a0814d9e13c091accd6cb83c1b?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/578a21a0814d9e13c091accd6cb83c1b?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.francescofusco.me/' rel='external nofollow' class='url'>Francesco</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-214"><time datetime="2012-04-01T16:03:40+00:00">April 1, 2012 at 4:03 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Great explanation!! I lost one day to try to configure my eclipse environment.<br />
+but I have a problem in uploading the sketch: &#8220;AVRDude Upload has encountered a problem&#8221; in Details I read: Could not initializate class gnu.io.CommPortIdentifier&#8221;. Please help me.<br />
+Ciao<br />
+Francesco</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-216">
+		<article id="comment-216" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Garrett</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-216"><time datetime="2012-04-03T14:20:12+00:00">April 3, 2012 at 2:20 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hmm, I&#8217;m not sure what to do really, is but I know some other people were having this problem.  They seemed to have worked it out by forcing an update to the plugin &#8211; see here: <a href="https://github.com/jantje/arduino-eclipse-plugin/issues/5" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://github.com/jantje/arduino-eclipse-plugin/issues/5', 'https://github.com/jantje/arduino-eclipse-plugin/issues/5');" rel="nofollow">https://github.com/jantje/arduino-eclipse-plugin/issues/5</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-880">
+		<article id="comment-880" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cf54bd44e31e1df5bc84defc97ec3945?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cf54bd44e31e1df5bc84defc97ec3945?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Gordon</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-880"><time datetime="2012-05-26T22:26:15+00:00">May 26, 2012 at 10:26 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I can compile but when invoke AVR I get an alert:</p>
+<p>AVRDude does not support the project target MCU [ATmega328P]<br />
+Please select a different target MCU if you want to use AVRDude.<br />
+(Properties -&gt; Target Hardware)</p>
+<p>Is it really impossible to develop for the Arduino Uno using Eclipse?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-887">
+		<article id="comment-887" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Garrett</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-887"><time datetime="2012-05-27T15:02:11+00:00">May 27, 2012 at 3:02 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>No it should work fine with the Uno! Make sure you select Arduino Uno as the board type on the right port.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-55326">
+		<article id="comment-55326" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/f592158d6893f0ec6736efe0e0e3dbbc?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f592158d6893f0ec6736efe0e0e3dbbc?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">lode</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-55326"><time datetime="2014-10-31T16:51:06+00:00">October 31, 2014 at 4:51 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I had the same error.Resolved by:<br />
+window-&gt;preferences-&gt;Arduino-&gt;Arduino </p>
+<p>check: Use Arduino IDE tools in Eclipse</p>
+<p>Then it uploads without a problem!</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-1121">
+		<article id="comment-1121" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/31b889bb0c907fedf06c5c61b6fce465?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/31b889bb0c907fedf06c5c61b6fce465?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">snowroad</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-1121"><time datetime="2012-06-07T17:36:45+00:00">June 7, 2012 at 5:36 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Is anyone else having permissions problems accessing the update site link?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1139">
+		<article id="comment-1139" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-1139"><time datetime="2012-06-09T04:21:36+00:00">June 9, 2012 at 4:21 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>snowroad<br />
+Several people have reported problems to connect to the update site.<br />
+In most cases it is related to the spaces in the url name.<br />
+You can also use a non space name by using <a href="http://www.baeyens.it/eclipse/update" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update', 'http://www.baeyens.it/eclipse/update');" rel="nofollow">http://www.baeyens.it/eclipse/update</a><br />
+The site is located on a respected web service provider.<br />
+Best regards<br />
+Jantje</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://www.scheck-media.de/2012/06/11/erste-schritte-mit-dem-arduino-projekt/' rel='external nofollow' class='url'>scheck media Blog - &raquo; erste Schritte mit dem Arduino Projekt</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-2334">
+		<article id="comment-2334" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/c93c228a0cfc031214f0984cc0f2c64e?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c93c228a0cfc031214f0984cc0f2c64e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://pixelpostman.com/' rel='external nofollow' class='url'>Steve Post</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-2334"><time datetime="2012-07-11T07:53:42+00:00">July 11, 2012 at 7:53 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Just a heads-up: the URL link in the &#8220;Installing the Arduino Eclipse Plugin&#8221; section appears to be incorrect &#8211; everyone will want to use:<br />
+<a href="http://www.baeyens.it/eclipse/update" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update', 'http://www.baeyens.it/eclipse/update');" rel="nofollow">http://www.baeyens.it/eclipse/update</a><br />
+the link appears to have included &#8221; site&#8221; in the URL, which is wrong.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor even depth-2" id="li-comment-2440">
+		<article id="comment-2440" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Garrett</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-2440"><time datetime="2012-07-12T20:09:14+00:00">July 12, 2012 at 8:09 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks! I changed the article to reflect the new URL.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3319">
+		<article id="comment-3319" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a6251ce2308b1b06843dbd695e220aad?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a6251ce2308b1b06843dbd695e220aad?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">luis</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-3319"><time datetime="2012-08-02T17:04:17+00:00">August 2, 2012 at 5:04 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hello I just downloaded Eclipse juno for Mac OSX 64 bit and then i downloaded Arduino EID software1.0.1. Arduino.app was sent to the application folder. I opened eclipse juno and installed the plug in v2.0.4 and when i go to eclipse&gt;preference&gt;arduino i cannot select the arduino.app. It shows in the application folder that it is there but i cannot select it i tried writting the adress manually but it doesnt work i cannot select the ok button to save the changess I need help installing this.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-3320">
+		<article id="comment-3320" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a6251ce2308b1b06843dbd695e220aad?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a6251ce2308b1b06843dbd695e220aad?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">luis</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-3320"><time datetime="2012-08-02T17:06:43+00:00">August 2, 2012 at 5:06 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>plug in is 1.2.4 not 2.0.4</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-3662">
+		<article id="comment-3662" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/7ff2eaa8af905875a244d295c312953f?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7ff2eaa8af905875a244d295c312953f?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.rondfok.co.za/' rel='external nofollow' class='url'>Johan</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-3662"><time datetime="2012-08-19T11:23:36+00:00">August 19, 2012 at 11:23 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi there,</p>
+<p>I&#8217;m having problems building the NanodeUIP example in eclipse. It builds fine in the Arduino IDE.</p>
+<p>It is giving me the following error on building:<br />
+/Applications/Arduino.app/Contents/Resources/Java/libraries/NanodeUIP/uip/unix/clock-arch.c:42:22: warning: sys/time.h: No such file or directory</p>
+<p>Any ideas?</p>
+<p>Thank you</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-3665">
+		<article id="comment-3665" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-3665"><time datetime="2012-08-19T12:54:00+00:00">August 19, 2012 at 12:54 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi<br />
+you say it is an error but the comment states it is a warning.<br />
+Are you aware the plugin compiles at warning  level &#8220;all&#8221; while the Arduino IDE 1.0 and lower uses a lower warning level?<br />
+Best regards<br />
+Janttje</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3974">
+		<article id="comment-3974" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/ee21cf0f38b6911cc1d421a628d2e84f?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ee21cf0f38b6911cc1d421a628d2e84f?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Mike</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-3974"><time datetime="2012-09-10T04:14:31+00:00">September 10, 2012 at 4:14 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi!</p>
+<p>Excellent article &#8211; however, after installing Eclipse (Juno) and plugin v1.2.4, I get the following if I try to build an empty project for the Mega2560:</p>
+<p>Errors occurred during the build.<br />
+Errors running builder &#8216;CDT Builder&#8217; on project &#8216;Test&#8217;.<br />
+Internal error building project Test configuration Release<br />
+java.lang.NullPointerException<br />
+Internal error building project Test configuration Release<br />
+java.lang.NullPointerException</p>
+<p>Any ideas what&#8217;s going on?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-4050">
+		<article id="comment-4050" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cb1e2fee5f86a00ded98e452699ccd66?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cb1e2fee5f86a00ded98e452699ccd66?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Andrew</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-4050"><time datetime="2012-09-16T09:19:41+00:00">September 16, 2012 at 9:19 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>It says it gives you errors but it  actually succeeded building. You have to hit the build button and then the &#8220;Upload current project to AVR&#8221; button, both of which will give you errors. It WILL upload though.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-3975">
+		<article id="comment-3975" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-3975"><time datetime="2012-09-10T04:23:38+00:00">September 10, 2012 at 4:23 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Juno is only supported in the latest version.<br />
+See <a href="https://github.com/jantje/arduino-eclipse-plugin/issues/12" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://github.com/jantje/arduino-eclipse-plugin/issues/12', 'https://github.com/jantje/arduino-eclipse-plugin/issues/12');" rel="nofollow">https://github.com/jantje/arduino-eclipse-plugin/issues/12</a><br />
+Best regards<br />
+Jantje</p>
+<p>PS if you like the plugin don&#8217;t forget to visit <a href="http://eclipse.baeyens.it/donate.html" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://eclipse.baeyens.it/donate.html', 'http://eclipse.baeyens.it/donate.html');" rel="nofollow">http://eclipse.baeyens.it/donate.html</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-5644">
+		<article id="comment-5644" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/70bcceec3be9af9f002204a96946f897?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/70bcceec3be9af9f002204a96946f897?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">0xDA_bit</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-5644"><time datetime="2012-11-13T03:49:35+00:00">November 13, 2012 at 3:49 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hello, first of all congratulations for this great tutorial and apologize for my english, it&#8217;s not very good.<br />
+I followed all the steps to the tutorial but I have a little problem&#8230; I can upload the program to the arduino but there are something that not works ok.<br />
+If, for example, I write &#8220;Serial.begin();&#8221; I appear 3 errors like:<br />
+1-&#8220;make:***[pruebaBlink.o]Error 1&#8221;<br />
+2-&#8220;Method &#8216;begin&#8217; could not be resolved&#8221;<br />
+3-&#8220;Symbol &#8216;Serial&#8217; could not be resolved&#8221;</p>
+<p>Thank you so much.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-2" id="li-comment-22568">
+		<article id="comment-22568" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/21ed25c903f11659b43ed67733d34aa3?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21ed25c903f11659b43ed67733d34aa3?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">palace</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-22568"><time datetime="2013-05-16T13:20:54+00:00">May 16, 2013 at 1:20 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I have the same problem. It seems it has to do with the include upfront thing and Juno doesnt have that option.. how to fix it?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even depth-2" id="li-comment-25994">
+		<article id="comment-25994" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-25994"><time datetime="2013-07-22T08:04:02+00:00">July 22, 2013 at 8:04 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Have you read <a href="http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock', 'http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock');" rel="nofollow">http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://elks.wordpress.com/2013/05/01/notes-on-getting-the-arduino-eclipse-plugin-working-with-readiymate/' rel='external nofollow' class='url'>Notes on getting the Arduino Eclipse plugin working with reaDIYmate | My hovercraft is full of elks</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-25992">
+		<article id="comment-25992" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">gus smith</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-25992"><time datetime="2013-07-22T07:58:10+00:00">July 22, 2013 at 7:58 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I installed it in mac osx lion. I can build a project. Everytime I upload it it says: &#8216;port /dev/tty.usbmodem26221 already in use. Try quiting any programs that may be using it&#8217;</p>
+<p>But it DOES upload the sketch successfully and it is run on the Arduino.</p>
+<p>I have no idea what is using the port. I closed the Arduino IDE.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-25993">
+		<article id="comment-25993" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">gus smith</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-25993"><time datetime="2013-07-22T08:01:08+00:00">July 22, 2013 at 8:01 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I&#8217;m using Eclipse Kepler btw.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt depth-2" id="li-comment-25995">
+		<article id="comment-25995" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-25995"><time datetime="2013-07-22T08:05:02+00:00">July 22, 2013 at 8:05 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Have you read<br />
+<a href="http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock', 'http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock');" rel="nofollow">http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#MAC_Lock</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-3" id="li-comment-25997">
+		<article id="comment-25997" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">gus smith</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-25997"><time datetime="2013-07-22T08:09:42+00:00">July 22, 2013 at 8:09 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>That works!<br />
+My bad.</p>
+<p>cheers,<br />
+Guus</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-25996">
+		<article id="comment-25996" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">gus smith</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-25996"><time datetime="2013-07-22T08:06:41+00:00">July 22, 2013 at 8:06 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Is there an option for a 1-click build and upload process?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-26000">
+		<article id="comment-26000" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-26000"><time datetime="2013-07-22T08:20:50+00:00">July 22, 2013 at 8:20 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I&#8217;m thinking about having people sponsor changes. This is one that could be considered.<br />
+Jantje</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26008">
+		<article id="comment-26008" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">gus smith</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-26008"><time datetime="2013-07-22T10:10:49+00:00">July 22, 2013 at 10:10 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>No problem, I really appreciate your work.<br />
+Just &#8216;bought&#8217; you a Leonardo 🙂</p>
+<p>Cheers,<br />
+Gus</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-26026">
+		<article id="comment-26026" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/873c76c9d969b81b497196103833cf89?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.baeyens.it/eclipse' rel='external nofollow' class='url'>jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-26026"><time datetime="2013-07-22T15:44:40+00:00">July 22, 2013 at 3:44 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks it is really appreciated.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26714">
+		<article id="comment-26714" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b2ea9e16d5cd133f01c682616b4c848f?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">gus smith</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-26714"><time datetime="2013-08-02T12:13:11+00:00">August 2, 2013 at 12:13 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I imported the Wire library.<br />
+Added &#8220;#include &#8220;Wire.h&#8221; in the header file.</p>
+<p>I keep getting:<br />
+&#8220;/libraries/Wire/Wire.cpp:26:19: warning: twi.h: No such file or directory&#8221;</p>
+<p>I tried to include &#8220;twi.h&#8221; in the header also.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2" id="li-comment-26716">
+		<article id="comment-26716" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">jan</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-26716"><time datetime="2013-08-02T12:23:47+00:00">August 2, 2013 at 12:23 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Have you seen <a href="http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#wire" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#wire', 'http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#wire');" rel="nofollow">http://eclipse.baeyens.it/Arduino%20eclipse%20plugin%20FAQ.htm#wire</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-27622">
+		<article id="comment-27622" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2362dfbd11e3806c1c193eafff128449?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2362dfbd11e3806c1c193eafff128449?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Aiacos</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-27622"><time datetime="2013-08-16T02:11:56+00:00">August 16, 2013 at 2:11 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I have a problem when I go to load on my card (Arduino Mega 2560), I attach a screenshot:<br />
+<a href="https://www.dropbox.com/s/v2pxe91pm8q19j2/problem_with_programmer.tiff" onclick="__gaTracker('send', 'event', 'outbound-comment', 'https://www.dropbox.com/s/v2pxe91pm8q19j2/problem_with_programmer.tiff', 'https://www.dropbox.com/s/v2pxe91pm8q19j2/problem_with_programmer.tiff');" rel="nofollow">https://www.dropbox.com/s/v2pxe91pm8q19j2/problem_with_programmer.tiff</a><br />
+I use Eclipse Indigo 32bit</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-27623">
+		<article id="comment-27623" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://baeyens.it/' rel='external nofollow' class='url'>jan</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-27623"><time datetime="2013-08-16T03:40:46+00:00">August 16, 2013 at 3:40 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>You are missing the configuration file option (-C). On my system that is -C/home/jan/programs/arduino-1.5.2/hardware/tools/avrdude.conf<br />
+Check these settings <a href="/wp-content/uploads/2012/01/avrdude-ss.png" rel="nofollow">/wp-content/uploads/2012/01/avrdude-ss.png</a><br />
+Jantje</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-31124">
+		<article id="comment-31124" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a713e589256c41f5ba52c66c4456736d?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a713e589256c41f5ba52c66c4456736d?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://br.linkedin.com/in/alexandreabarbosa/' rel='external nofollow' class='url'>ALEXANDRE BARBOSA</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-31124"><time datetime="2013-10-05T17:00:04+00:00">October 5, 2013 at 5:00 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Have seem my first moment with Eclipse with Arduino thanks for this tutorial<br />
+It was perfect for me</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-32615">
+		<article id="comment-32615" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2362dfbd11e3806c1c193eafff128449?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2362dfbd11e3806c1c193eafff128449?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Aiacos</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-32615"><time datetime="2013-10-29T06:00:18+00:00">October 29, 2013 at 6:00 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>it would be nice to have the same plugin for NetBeans 🙂 is it possible?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-41169">
+		<article id="comment-41169" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/d3355485f6ad7a3ef425a2e658daa2ba?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d3355485f6ad7a3ef425a2e658daa2ba?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">mike</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-41169"><time datetime="2014-01-07T02:04:18+00:00">January 7, 2014 at 2:04 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi, I tried this and compilation works fine.<br />
+But when I try to upload to my micro I get:<br />
+Launching /Applications/Arduino_1.5.2.app/Contents/Resources/Java/hardware/tools/avr/bin/avrdude -C/Applications/Arduino_1.5.2.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf -patmega32u4 -cavr109 -P /dev/tty.usbmodemfd131 -b57600 -D -Uflash:w:/Users/mike/Documents/Programmieren/Eclipse/micro/Release/micro.hex:i<br />
+Output:</p>
+<p>and thats it. Progress (avrdude) gets stuck and I can wait endlessly.</p>
+<p>Any suggestions?<br />
+Serial Monitor works and gives Numbers like:<br />
+305<br />
+308<br />
+312<br />
+314<br />
+315<br />
+315<br />
+313</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-48152">
+		<article id="comment-48152" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/11b410cae03e83bf72c23ac6b8b071c7?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/11b410cae03e83bf72c23ac6b8b071c7?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.stars-feminines.com/' rel='external nofollow' class='url'>grosse cochonne</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-48152"><time datetime="2014-07-04T15:25:17+00:00">July 4, 2014 at 3:25 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Une fois de ppus սn magnifique article, je pense en discuter<br />
+ce soir avec certains de mmes amis</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-48185">
+		<article id="comment-48185" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a89e2aa6620ee98b62cdc8deab4122f9?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a89e2aa6620ee98b62cdc8deab4122f9?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://healthproblembestremedy.com/' rel='external nofollow' class='url'>Monroe</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-48185"><time datetime="2014-07-05T11:33:44+00:00">July 5, 2014 at 11:33 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I do not leaave a lot of responses, but i did a few searching and wound up here Arduino Eclipse Development Environment for Mac OS X |<br />
+Mechatronics Project Site. And I do have a couple of questions for you if you tend not to mind.<br />
+Could it be only me or does it appear like some oof these responses appear as if they<br />
+are coming from brain dead individuals? 😛 And, if you are posting at<br />
+other online sites, I&#8217;d like to keep up with everything new you have to post.<br />
+Could you make a list of all of your communal pages like your linkedin profile,<br />
+Facebook page or twitter feed?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-48229">
+		<article id="comment-48229" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b53ce8632c0b461cbc2b1460438b94c4?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b53ce8632c0b461cbc2b1460438b94c4?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://Kattie.blogspot.com/' rel='external nofollow' class='url'>Nannette</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-48229"><time datetime="2014-07-06T13:14:45+00:00">July 6, 2014 at 1:14 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I see a lot of interesting articles on your blog. You have to<br />
+spend a lot of time writing, i know how to save you a lot<br />
+of work, there is a tool that creates unique, google friendly articles in couple of seconds, just type in google  &#8211; laranita&#8217;s free content<br />
+source</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-49557">
+		<article id="comment-49557" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/1b6bdc725eed6495cabc6c5627cb3ccc?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/1b6bdc725eed6495cabc6c5627cb3ccc?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.medicaloo.com/userinfo.php?uid=732679' rel='external nofollow' class='url'>medicaloo.com</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-49557"><time datetime="2014-08-05T10:45:59+00:00">August 5, 2014 at 10:45 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Great blog here! Also your web site loads up very fast! What<br />
+host are you using? Can I get your affiliate link to your host?<br />
+I wish my web site loaded up as quickly as yours lol</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-49736">
+		<article id="comment-49736" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2bf2fd3ba963905e648d6008a4bc3320?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2bf2fd3ba963905e648d6008a4bc3320?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://durl.me/789ki3' rel='external nofollow' class='url'>Herramientas de Trabajo Colaborativo</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-49736"><time datetime="2014-08-11T11:16:04+00:00">August 11, 2014 at 11:16 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Fabulous, what a website it is! This webpage gives helpful facts to us,<br />
+keep it up.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-50566">
+		<article id="comment-50566" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/283e234d63fd7a0a8c98c5f0b694ac35?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/283e234d63fd7a0a8c98c5f0b694ac35?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://Alex.weebly.com/' rel='external nofollow' class='url'>Ladonna</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-50566"><time datetime="2014-08-27T09:12:49+00:00">August 27, 2014 at 9:12 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I read a lot of interesting posts here. Probably you  spend a lot<br />
+of time writing, i know how to save you a lot of time, there<br />
+is an online tool that creates high quality, google friendly<br />
+posts in seconds, just search in google  &#8211; laranitas free content source</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-51167">
+		<article id="comment-51167" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/aa6fcb7526ab72a764bbac5d80117b03?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/aa6fcb7526ab72a764bbac5d80117b03?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://casinopanatet.webnode.com/' rel='external nofollow' class='url'>svenska casinon på nett</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-51167"><time datetime="2014-09-07T01:58:38+00:00">September 7, 2014 at 1:58 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Fantastic site you have here but I was curious about if you knew of any user discussion forums that cover the same topics talked about here?<br />
+I&#8217;d really love to be a part of community where I can get opinions from other experienced people that share the<br />
+same interest. If you have any suggestions, please let me<br />
+know. Thank you!</p>
+<p>Visit my web blog &#8211; <a href="http://casinopanatet.webnode.com/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://casinopanatet.webnode.com', 'svenska casinon på nett');" rel="nofollow">svenska casinon på nett</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-54377">
+		<article id="comment-54377" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9344b4b42e323cf5feeab817af6dd90e?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9344b4b42e323cf5feeab817af6dd90e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Kalfsbeek</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-54377"><time datetime="2014-10-22T11:43:17+00:00">October 22, 2014 at 11:43 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi guys,</p>
+<p>When I try to compile the project on my mac this is the error i get; i&#8217;m not sure where the solution is to be found, hope one of you can help me!</p>
+<p>avrdude: reading input file &#8220;/Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex&#8221;<br />
+avrdude: can&#8217;t open input file /Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex: No such file or directory<br />
+avrdude: read from file &#8216;/Users/Arjan/Dropbox/source codes/workspace2/Arduino/Release/Arduino.hex&#8217; failed</p>
+<p>Thanks a lot!!</p>
+<p>Arjan</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-68897">
+		<article id="comment-68897" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/ab62240b0a86c2dd3ebc4bac36ad7b99?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/ab62240b0a86c2dd3ebc4bac36ad7b99?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Don Slattery</span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-68897"><time datetime="2015-06-01T16:02:08+00:00">June 1, 2015 at 4:02 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>It appears that installing the plugin fails.  Is there a workaround for this?</p>
+<p>An error occurred while collecting items to be installed<br />
+session context was:(profile=epp.package.cpp, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).<br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.common_1.1.0.5.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.arduino.core_1.1.1.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar', 'http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar', 'http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/features/it.baeyens.arduino.feature_1.2.0.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core_1.0.6.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.core.managedbuildsystem_1.0.4.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar', 'http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/it.baeyens.avreclipse.ui_4.0.6.jar</a><br />
+Artifact not found: <a href="http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar', 'http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar</a>.<br />
+<a href="http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar', 'http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar');" rel="nofollow">http://www.baeyens.it/eclipse/update/plugins/org.eclipse.jface_3.7.0.I20110522-1430.jar</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-68917">
+		<article id="comment-68917" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/13e43d04f182e9982181d93b4ac1e806?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://eclipse.baeyens.it/' rel='external nofollow' class='url'>Jantje</a></span> on <a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/#comment-68917"><time datetime="2015-06-02T03:28:48+00:00">June 2, 2015 at 3:28 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I (jantje) strongly advice to install the product (nightly version for sure if you are a mac user) which you can find on <a href="http://eclipse.baeyens.it/" onclick="__gaTracker('send', 'event', 'outbound-comment', 'http://eclipse.baeyens.it', 'http://eclipse.baeyens.it');" rel="nofollow">http://eclipse.baeyens.it</a> by selecting install at the top of the page.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://www.brandiwc.com/brand-super-16-copy-0.html' rel='external nofollow' class='url'>12ヶ月前、アカザのコーニングはメルボルン運転フェラーリ初もぎ取る大会冠。ウブロスーパーコピー今年から見れば、オーストラリアの全体の2008フォーミュラ1シーズンは、4位のタグホイ</a></p>
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+				<p class="nocomments">Comments are closed.</p>
+		
+	
+	
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">Project 3 &#8211; Copter Software &#038; Testing</h3><div class="menu-project-3-container"><ul id="menu-project-3" class="menu"><li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="/project-3/">Introduction &#038; Overview</a></li>
+<li id="menu-item-686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="/project-3/motor-orientation/">Motor Orientations</a></li>
+<li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-576"><a href="/project-3/quadcopter-software/">Quadcopter Software</a>
+<ul  class="sub-menu">
+	<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="/project-3/quadcopter-software/motor-control/">Motor Speed Control Hook</a></li>
+	<li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="/project-3/quadcopter-software/wireless-radio/">Wireless Radio Hook</a></li>
+	<li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/project-3/quadcopter-software/gamepad-control/">Remote Station &#038; Gamepad Control</a></li>
+	<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="/project-3/quadcopter-software/setup-video-demonstration/">Software Setup Videos</a></li>
+	<li id="menu-item-556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-556"><a href="https://github.com/2012SEng466/copter" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/2012SEng466/copter', 'Copter Source Code');">Copter Source Code</a></li>
+</ul>
+</li>
+<li id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-574"><a href="/project-3/pid-tuning-flight-testing/">PID Tuning &#038; Flight Testing</a></li>
+<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555"><a href="/project-3/troubleshooting/">Troubleshooting</a></li>
+<li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="/project-3/wiring-schematic/">Wiring Schematic</a></li>
+<li id="menu-item-575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-575"><a href="/project-3/possible-improvements/">Possible Improvements</a></li>
+<li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="/project-3/project-3-demonstration-videos/">Flight Videos</a></li>
+</ul></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">Project 2 &#8211; Copter Mechanics &#038; Electronics</h3><div class="menu-project-2-container"><ul id="menu-project-2" class="menu"><li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="/project-2/">Introduction &#038; Overview</a></li>
+<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="/project-2/esc-calibration-programming/">ESC Calibration &#038; Programming</a></li>
+<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="/project-2/9-degrees-of-freedom-sensor/">9 Degrees of Freedom Sensor</a></li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-367"><a href="/project-2/mechanical-design/">Mechanical Design</a>
+<ul  class="sub-menu">
+	<li id="menu-item-370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="/project-2/mechanical-design/cad-model-and-simulations/">CAD Models and Simulations</a></li>
+	<li id="menu-item-369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="/project-2/mechanical-design/manufacting-the-parts/">Manufacturing the Parts</a></li>
+	<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"><a href="/project-2/mechanical-design/assembly/">Assembly</a></li>
+</ul>
+</li>
+<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510"><a href="/project-2/testing-hover-capability/">Testing Hover Capability</a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509"><a href="/project-2/project-2-demonstration-video/">Project 2 Demonstration Video</a></li>
+</ul></div></aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Project 1</h3><div class="menu-project-1-container"><ul id="menu-project-1" class="menu"><li id="menu-item-238" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-238"><a href="/project-1/">Introduction &#038; Overview</a></li>
+<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14 current_page_item menu-item-237"><a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/">Development Environment</a></li>
+<li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="/project-1/component-based-design-and-process/">Component Oriented Design Process</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="/project-1/mechanical-design/">Mechanical Design</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-230"><a href="/project-1/dc-motors/">DC Motors</a>
+<ul  class="sub-menu">
+	<li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a href="/project-1/working-with-the-brushless-dc-motor/">Programming the Motor</a></li>
+</ul>
+</li>
+<li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="/project-1/srf04-sonar/">SRF04 Sonar</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="/project-1/control-flow-in-the-hover-station/">Hover Station Control Flow</a></li>
+<li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="/project-1/wireless-radio/">Wireless Radios</a></li>
+<li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="/project-1/logitech-game-pad/">Logitech Game Pad</a></li>
+<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="/project-1/source-code/">Full Source Code</a></li>
+<li id="menu-item-242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-242"><a href="/project-1/project-video/">Project Video</a></li>
+</ul></div></aside>		</div><!-- #secondary .widget-area -->
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+			<div id="site-generator">
+								<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+			</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-13e43d04f182e9982181d93b4ac1e806">
+	</div>
+	<div class="grofile-hash-map-2b25095a2e4a0aa4dfe0cd854006bb8e">
+	</div>
+	<div class="grofile-hash-map-cd53d2655345e21e5a90562da0129a00">
+	</div>
+	<div class="grofile-hash-map-e54ba49e3593933ef473cd13e518ee62">
+	</div>
+	<div class="grofile-hash-map-b52b4fe776d1059c39024819c22c26e0">
+	</div>
+	<div class="grofile-hash-map-9e650c769dd13e41173f6ed19ee4d3f5">
+	</div>
+	<div class="grofile-hash-map-6478033753f1ad60dc4df024c7562212">
+	</div>
+	<div class="grofile-hash-map-578a21a0814d9e13c091accd6cb83c1b">
+	</div>
+	<div class="grofile-hash-map-cf54bd44e31e1df5bc84defc97ec3945">
+	</div>
+	<div class="grofile-hash-map-f592158d6893f0ec6736efe0e0e3dbbc">
+	</div>
+	<div class="grofile-hash-map-31b889bb0c907fedf06c5c61b6fce465">
+	</div>
+	<div class="grofile-hash-map-873c76c9d969b81b497196103833cf89">
+	</div>
+	<div class="grofile-hash-map-c93c228a0cfc031214f0984cc0f2c64e">
+	</div>
+	<div class="grofile-hash-map-a6251ce2308b1b06843dbd695e220aad">
+	</div>
+	<div class="grofile-hash-map-7ff2eaa8af905875a244d295c312953f">
+	</div>
+	<div class="grofile-hash-map-ee21cf0f38b6911cc1d421a628d2e84f">
+	</div>
+	<div class="grofile-hash-map-cb1e2fee5f86a00ded98e452699ccd66">
+	</div>
+	<div class="grofile-hash-map-70bcceec3be9af9f002204a96946f897">
+	</div>
+	<div class="grofile-hash-map-21ed25c903f11659b43ed67733d34aa3">
+	</div>
+	<div class="grofile-hash-map-b2ea9e16d5cd133f01c682616b4c848f">
+	</div>
+	<div class="grofile-hash-map-2362dfbd11e3806c1c193eafff128449">
+	</div>
+	<div class="grofile-hash-map-a713e589256c41f5ba52c66c4456736d">
+	</div>
+	<div class="grofile-hash-map-d3355485f6ad7a3ef425a2e658daa2ba">
+	</div>
+	<div class="grofile-hash-map-11b410cae03e83bf72c23ac6b8b071c7">
+	</div>
+	<div class="grofile-hash-map-a89e2aa6620ee98b62cdc8deab4122f9">
+	</div>
+	<div class="grofile-hash-map-b53ce8632c0b461cbc2b1460438b94c4">
+	</div>
+	<div class="grofile-hash-map-1b6bdc725eed6495cabc6c5627cb3ccc">
+	</div>
+	<div class="grofile-hash-map-2bf2fd3ba963905e648d6008a4bc3320">
+	</div>
+	<div class="grofile-hash-map-283e234d63fd7a0a8c98c5f0b694ac35">
+	</div>
+	<div class="grofile-hash-map-aa6fcb7526ab72a764bbac5d80117b03">
+	</div>
+	<div class="grofile-hash-map-9344b4b42e323cf5feeab817af6dd90e">
+	</div>
+	<div class="grofile-hash-map-ab62240b0a86c2dd3ebc4bac36ad7b99">
+	</div>
+	</div>
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201739'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Sepaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.js?ver=1.5.7'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201739.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.7',blog:'31972707',post:'14',tz:'-7',srv:'robots.dacloughb.com'} ]);
+	_stq.push([ 'clickTrackerInit', '31972707', '14' ]);
+</script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+</body>
+</html>

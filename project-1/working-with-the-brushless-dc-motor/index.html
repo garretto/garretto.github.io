@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Working with the Brushless DC Motor | Mechatronics Project Site</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/twentyeleven/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Working with the Brushless DC Motor Comments Feed" href="/project-1/working-with-the-brushless-dc-motor/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='jetpack_css-css'  href='/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-28621799-2', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.2" />
+<link rel="canonical" href="/project-1/working-with-the-brushless-dc-motor/" />
+<link rel='shortlink' href='http://wp.me/P2a9yP-1D' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fproject-1%2Fworking-with-the-brushless-dc-motor%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fproject-1%2Fworking-with-the-brushless-dc-motor%2F&#038;format=xml" />
+<link rel="stylesheet" type="text/css" href="/wp-content/plugins/wp-code-highlight/css/wp-code-highlight.css" media="screen" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Working with the Brushless DC Motor" />
+<meta property="og:url" content="/project-1/working-with-the-brushless-dc-motor/" />
+<meta property="og:description" content="Connecting the brushless DC motor The motor has connections for DC power, and we used a Plush 6amp Brushless Speed Controller, a third party ESC for regulating motor speed. The power setup should b…" />
+<meta property="article:published_time" content="2012-02-10T18:45:45+00:00" />
+<meta property="article:modified_time" content="2016-01-19T07:44:41+00:00" />
+<meta property="og:site_name" content="Mechatronics Project Site" />
+<meta property="og:image" content="/wp-content/uploads/2012/01/IMG_0473-300x203.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery ');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+</head>
+
+<body class="page-template page-template-sidebar-page page-template-sidebar-page-php page page-id-101 page-child parent-pageid-12 single-author two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="/" rel="home">Mechatronics Project Site</a></span></h1>
+				<h2 id="site-description">Group Project Site for SEng466 at the University of Victoria</h2>
+			</hgroup>
+
+						<a href="/">
+									<img src="/wp-content/uploads/2012/04/cropped-render-1.jpg" width="1000" height="288" alt="Mechatronics Project Site" />
+							</a>
+			
+								<form method="get" id="searchform" action="/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+												<div class="menu"><ul>
+<li ><a href="/">Home</a></li><li class="page_item page-item-12 page_item_has_children current_page_ancestor current_page_parent"><a href="/project-1/">Project 1</a>
+<ul class='children'>
+	<li class="page_item page-item-14"><a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/">Arduino Eclipse Development Environment for Mac OS X</a></li>
+	<li class="page_item page-item-112"><a href="/project-1/component-based-design-and-process/">Component Oriented Design Process</a></li>
+	<li class="page_item page-item-113"><a href="/project-1/control-flow-in-the-hover-station/">Control flow in the Hover Station</a></li>
+	<li class="page_item page-item-91"><a href="/project-1/dc-motors/">DC Motors</a></li>
+	<li class="page_item page-item-137"><a href="/project-1/source-code/">Full Source Code</a></li>
+	<li class="page_item page-item-164"><a href="/project-1/logitech-game-pad/">Logitech Game Pad</a></li>
+	<li class="page_item page-item-37"><a href="/project-1/mechanical-design/">Mechanical Design</a></li>
+	<li class="page_item page-item-202"><a href="/project-1/project-video/">Project Video</a></li>
+	<li class="page_item page-item-83"><a href="/project-1/srf04-sonar/">SRF04 Sonar</a></li>
+	<li class="page_item page-item-78"><a href="/project-1/wireless-radio/">Wireless Radio</a></li>
+	<li class="page_item page-item-101 current_page_item"><a href="/project-1/working-with-the-brushless-dc-motor/">Working with the Brushless DC Motor</a></li>
+</ul>
+</li>
+<li class="page_item page-item-271 page_item_has_children"><a href="/project-2/">Project 2</a>
+<ul class='children'>
+	<li class="page_item page-item-301"><a href="/project-2/9-degrees-of-freedom-sensor/">9 Degrees of Freedom Sensor</a></li>
+	<li class="page_item page-item-275"><a href="/project-2/esc-calibration-programming/">ESC Calibration &#038; Programming</a></li>
+	<li class="page_item page-item-295 page_item_has_children"><a href="/project-2/mechanical-design/">Mechanical Design</a>
+	<ul class='children'>
+		<li class="page_item page-item-346"><a href="/project-2/mechanical-design/cad-model-and-simulations/">CAD Models and Simulations</a></li>
+		<li class="page_item page-item-357"><a href="/project-2/mechanical-design/manufacting-the-parts/">Manufacturing the Parts</a></li>
+		<li class="page_item page-item-361"><a href="/project-2/mechanical-design/assembly/">Assembly</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-506"><a href="/project-2/project-2-demonstration-video/">Project 2 Demonstration Video</a></li>
+	<li class="page_item page-item-499"><a href="/project-2/testing-hover-capability/">Testing Hover Capability</a></li>
+</ul>
+</li>
+<li class="page_item page-item-461 page_item_has_children"><a href="/project-3/">Project 3</a>
+<ul class='children'>
+	<li class="page_item page-item-539"><a href="/project-3/project-3-demonstration-videos/">Demonstration Videos</a></li>
+	<li class="page_item page-item-677"><a href="/project-3/motor-orientation/">Motor Orientations</a></li>
+	<li class="page_item page-item-572"><a href="/project-3/pid-tuning-flight-testing/">PID Tuning &#038; Flight Testing</a></li>
+	<li class="page_item page-item-569"><a href="/project-3/possible-improvements/">Possible Improvements</a></li>
+	<li class="page_item page-item-561 page_item_has_children"><a href="/project-3/quadcopter-software/">Quadcopter Software</a>
+	<ul class='children'>
+		<li class="page_item page-item-563"><a href="/project-3/quadcopter-software/motor-control/">Motor Speed Control Hook</a></li>
+		<li class="page_item page-item-582"><a href="/project-3/quadcopter-software/gamepad-control/">Remote Station &#038; Gamepad Control</a></li>
+		<li class="page_item page-item-698"><a href="/project-3/quadcopter-software/setup-video-demonstration/">Setup Video Demonstration</a></li>
+		<li class="page_item page-item-580"><a href="/project-3/quadcopter-software/wireless-radio/">Wireless Radio Hook</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-547"><a href="/project-3/troubleshooting/">Troubleshooting</a></li>
+	<li class="page_item page-item-379"><a href="/project-3/wiring-schematic/">Wiring Schematic</a></li>
+</ul>
+</li>
+</ul></div>
+			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-101" class="post-101 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Working with the Brushless DC Motor</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<h2>Connecting the brushless DC motor</h2>
+<p>The motor has connections for DC power, and we used a Plush 6amp Brushless Speed Controller, a third party ESC for regulating motor speed.</p>
+<p>The power setup should be very straightforward; however, because of the signal noise and current draw from the motor, we suggest powering the motor from a separate DC supply and not from the Arduino board.  Though it&#8217;s not necessary, it&#8217;s easy to do and can prevent later complications.</p>
+<div id="attachment_205" style="width: 310px" class="wp-caption alignright"><a href="/wp-content/uploads/2012/01/IMG_0473.jpg"><img class="size-medium wp-image-205" title="ESC with motor" src="/wp-content/uploads/2012/01/IMG_0473-300x203.jpg" alt="" width="300" height="203" srcset="/wp-content/uploads/2012/01/IMG_0473-300x203.jpg 300w, /wp-content/uploads/2012/01/IMG_0473-441x300.jpg 441w, /wp-content/uploads/2012/01/IMG_0473.jpg 598w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">ESC attached to a brushless DC motor.  Connecting the middle lead is not necessary.</p></div>
+<p>The control leads on the ESC are simple to connect too.  One is connected to ground, another deals with the PWM control signals and so should be connected to a PWM pin on the Arduino, and the middle one is Vout. The middle output is not necessary and was not used in the final design.</p>
+<h2>Controlling The Brushless DC Motor</h2>
+<p>The built in Arduino Servo library includes everything needed to control a brushless DC motor when Servo.h is included.  If you are having problems with Eclipse finding the module Servo.h, you can manually find the Servo.h and Servo.cpp files and move them into your current project folder.</p>
+<p>To use the motor, first create an instance of type Servo. We&#8217;ll call this instance &#8220;motor&#8221;. Then, call</p>
+<pre class="wp-code-highlight prettyprint">motor.attach(*pin*)</pre>
+<p>where *pin* is the pin on the board that&#8217;s connected to the motor&#8217;s control lead.</p>
+<p>To set a speed for the motor, use</p>
+<pre class="wp-code-highlight prettyprint">motor.write(*desired speed*)</pre>
+<p>In Servo.h, it states that the desired speed is an angle (or step) from 0 to 180. An explanation of how motor speed is derived from a degree angle can be found <a href="http://en.wikipedia.org/wiki/Stepper_motor#Fundamentals_of_operation" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://en.wikipedia.org/wiki/Stepper_motor#Fundamentals_of_operation', 'here');">here</a>.</p>
+<h2>Problems Encountered</h2>
+<p>The motor&#8217;s specs say that it will only work on the Seeduino&#8217;s pins 9 and 10, but these pins were already in use.  However, the motor worked on pins 5 and 7 as well as 9 and 10, so any PWM I/O pin should work.</p>
+<p>When setting the motor speed, you cannot instantly assign an arbitrary angle while the motor is in stop position, the motor needs to be increased gradually. In order to start teh motor to start at 80, for example, start at 0 and work up to 80 in increments. Once the motor has started, you have more leeway in the angle jumps: going from 180 to 80 can be done.  We found that the motor did not begin to rotate until 45.</p>
+<p>Timing the motor initialization with the beginning of the program was also a problem.  If the motor is not working properly (especially if the motor is not starting) when you are certain it should (e.g. you&#8217;re using Serial print statements to check that motor.write is getting the right arguments, logic analyzers to see that the correct PWM signal is being sent to the motor, and have checked that all wiring and power supplies are correct), then the problem may be a timing issue.  ENsure the motor is gradually approaching its starting speed, and play around with longer delays.</p>
+<p>Here is some sample code taken from our motor control testing that illustrates everything covered above.</p>
+<pre class="wp-code-highlight prettyprint">#include &quot;Servo.h&quot;
+
+#define MOTOR_PIN			10
+#define MOTOR_MAX_SPEED		        180
+#define MOTOR_START_SPEED               80
+
+int motor_current_speed = 0;
+int motor_increment = 1;
+int max_reached = 0;
+
+Servo motor;
+
+// Wrapper function for Servo&#039;s &quot;.write(*speed*)&quot; function
+void motorSetSpeed(int speed)
+{
+// Don&#039;t let the motor go above or below pre-determined max and min
+	if (speed &amp;gt; MOTOR_MAX_SPEED)
+		speed = MOTOR_MAX_SPEED;
+	else if (speed &amp;lt; MOTOR_START_SPEED)
+		speed = MOTOR_START_SPEED;
+
+	motor.write(speed);
+	motor_current_speed = speed;
+
+	Serial.print(&quot;current motor speed = &quot;);
+	Serial.println(motor_current_speed);
+}
+
+void motorSpeedUp()
+{
+/*
+Speed up quicker than normal if speed is less than 100.
+Motor&#039;s thrust to current relation is not linear - the motor needs a certain
+minimum amount of current to generate sufficient thrust to initially lift the ball.
+From observation, that minimum current is around speed 100.
+*/
+	int increment = (motor_current_speed &amp;lt; 100) ? motor_increment + 3: motor_increment
+	motorSetSpeed(motor_current_speed + increment);
+}
+
+void motorSlowDown()
+{
+	motorSetSpeed(motor_current_speed - increment);
+}
+
+void motorStop()
+{
+	motor.write(0);
+}
+
+/*
+!!! Very important! Motor has to start at 0 and reach desired speed gradually.
+It will NOT work if you go directly to speed 60 or 100, etc.
+If this isn&#039;t working for you, try increasing the delay.
+*/
+void motorStartAt(int start_speed)
+{
+	int i;
+	for (i=0; i &amp;lt; start_speed; i+=5) {
+		motorSetSpeed(i);
+		Serial.println(i);
+		delay(100);
+	}
+}
+
+void setup()
+{
+
+	// Setup deb
+	Serial.begin(9600);
+
+	// Motor
+	delay(1000);
+	motor.attach(MOTOR_PIN);
+	motorStartAt(motor_start_speed);
+	delay(1500);
+}
+
+/*
+Speeds the motor up until it hits 170,
+then slows it down to the start speed again.
+Repeats.
+*/
+void loop()
+{
+
+        if (!max_reached) {
+            motorSpeedUp();
+        } else {
+            motorSlowDown();
+        }
+        if (motor_current_speed &amp;lt; MOTOR_START_SPEED) {
+            max_reached = 0;
+        } else if (motor_current_speed &amp;gt; MOTOR_MAX_SPEED) {
+            max_reached = 1;
+        }
+        delay(500);
+}</pre>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-101 -->
+
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			8 thoughts on &ldquo;<span>Working with the Brushless DC Motor</span>&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-4507">
+		<article id="comment-4507" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/195eac1ecf30c9a86c9e59c04e8b951c?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/195eac1ecf30c9a86c9e59c04e8b951c?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Willi</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-4507"><time datetime="2012-10-17T02:05:19+00:00">October 17, 2012 at 2:05 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hey,<br />
+Where can I find the file Motor_Test.h?<br />
+Thanks<br />
+Best Regards Willi</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-4646">
+		<article id="comment-4646" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=39&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cd53d2655345e21e5a90562da0129a00?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Garrett</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-4646"><time datetime="2012-10-21T19:03:38+00:00">October 21, 2012 at 7:03 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hey Willi, you don&#8217;t actually need it.  That was a generic header file for the .c file of the same name created by my IDE.  I&#8217;ve removed that include for clarity.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-46270">
+		<article id="comment-46270" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/04a745f21861a9fba78169d222bb59f8?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/04a745f21861a9fba78169d222bb59f8?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">EDGAH SIMIYU MASINDE</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-46270"><time datetime="2014-05-16T02:26:32+00:00">May 16, 2014 at 2:26 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>it is a wonderful project.how can i be tought how to program an ic?<br />
+best regards, EDGAH.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-48742">
+		<article id="comment-48742" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/69fb31ba5cebda59f4e86aa3f560dfc3?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/69fb31ba5cebda59f4e86aa3f560dfc3?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">balakumar</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-48742"><time datetime="2014-07-20T23:20:46+00:00">July 20, 2014 at 11:20 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>hi my project is the BLDC Motor so pls any idea&#8230;&#8230;&#8230;&#8230;..</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-53150">
+		<article id="comment-53150" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/151a703fd03607ba326b7e515768c789?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/151a703fd03607ba326b7e515768c789?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Sootona</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-53150"><time datetime="2014-10-09T03:27:01+00:00">October 9, 2014 at 3:27 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I get an error in the program&#8230; What the mean &amp;gt??? // if (speed &amp;gt ; MOTOR_MAX_SPEED)</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-2" id="li-comment-60723">
+		<article id="comment-60723" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/85fb63c63e68affa7fee7a50da4fb7e8?s=39&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/85fb63c63e68affa7fee7a50da4fb7e8?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">Maks</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-60723"><time datetime="2014-12-19T01:15:52+00:00">December 19, 2014 at 1:15 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&amp;gt is &gt;,<br />
+&amp;lt is &lt;</p>
+<p>replace them in ur code</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-3" id="li-comment-70862">
+		<article id="comment-70862" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/1d1a14ceaa1de9c587fccebacd3814c1?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/1d1a14ceaa1de9c587fccebacd3814c1?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn">attef</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-70862"><time datetime="2015-10-14T04:48:27+00:00">October 14, 2015 at 4:48 am</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I get an error in the program… in motorSetSpeed(motor_current_speed + increment);<br />
+}</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1" id="li-comment-69839">
+		<article id="comment-69839" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/db431637c93561720ace7e6283068110?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/db431637c93561720ace7e6283068110?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">adris</span> on <a href="/project-1/working-with-the-brushless-dc-motor/#comment-69839"><time datetime="2015-08-02T22:20:35+00:00">August 2, 2015 at 10:20 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>hi my project is the BLDC Motor so pls any idea..thanks</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+				<p class="nocomments">Comments are closed.</p>
+		
+	
+	
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">Project 3 &#8211; Copter Software &#038; Testing</h3><div class="menu-project-3-container"><ul id="menu-project-3" class="menu"><li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="/project-3/">Introduction &#038; Overview</a></li>
+<li id="menu-item-686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="/project-3/motor-orientation/">Motor Orientations</a></li>
+<li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-576"><a href="/project-3/quadcopter-software/">Quadcopter Software</a>
+<ul  class="sub-menu">
+	<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="/project-3/quadcopter-software/motor-control/">Motor Speed Control Hook</a></li>
+	<li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="/project-3/quadcopter-software/wireless-radio/">Wireless Radio Hook</a></li>
+	<li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/project-3/quadcopter-software/gamepad-control/">Remote Station &#038; Gamepad Control</a></li>
+	<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="/project-3/quadcopter-software/setup-video-demonstration/">Software Setup Videos</a></li>
+	<li id="menu-item-556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-556"><a href="https://github.com/2012SEng466/copter" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/2012SEng466/copter', 'Copter Source Code');">Copter Source Code</a></li>
+</ul>
+</li>
+<li id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-574"><a href="/project-3/pid-tuning-flight-testing/">PID Tuning &#038; Flight Testing</a></li>
+<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555"><a href="/project-3/troubleshooting/">Troubleshooting</a></li>
+<li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="/project-3/wiring-schematic/">Wiring Schematic</a></li>
+<li id="menu-item-575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-575"><a href="/project-3/possible-improvements/">Possible Improvements</a></li>
+<li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="/project-3/project-3-demonstration-videos/">Flight Videos</a></li>
+</ul></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">Project 2 &#8211; Copter Mechanics &#038; Electronics</h3><div class="menu-project-2-container"><ul id="menu-project-2" class="menu"><li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="/project-2/">Introduction &#038; Overview</a></li>
+<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="/project-2/esc-calibration-programming/">ESC Calibration &#038; Programming</a></li>
+<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="/project-2/9-degrees-of-freedom-sensor/">9 Degrees of Freedom Sensor</a></li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-367"><a href="/project-2/mechanical-design/">Mechanical Design</a>
+<ul  class="sub-menu">
+	<li id="menu-item-370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="/project-2/mechanical-design/cad-model-and-simulations/">CAD Models and Simulations</a></li>
+	<li id="menu-item-369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="/project-2/mechanical-design/manufacting-the-parts/">Manufacturing the Parts</a></li>
+	<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"><a href="/project-2/mechanical-design/assembly/">Assembly</a></li>
+</ul>
+</li>
+<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510"><a href="/project-2/testing-hover-capability/">Testing Hover Capability</a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509"><a href="/project-2/project-2-demonstration-video/">Project 2 Demonstration Video</a></li>
+</ul></div></aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Project 1</h3><div class="menu-project-1-container"><ul id="menu-project-1" class="menu"><li id="menu-item-238" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-238"><a href="/project-1/">Introduction &#038; Overview</a></li>
+<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/">Development Environment</a></li>
+<li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="/project-1/component-based-design-and-process/">Component Oriented Design Process</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="/project-1/mechanical-design/">Mechanical Design</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-230"><a href="/project-1/dc-motors/">DC Motors</a>
+<ul  class="sub-menu">
+	<li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-101 current_page_item menu-item-232"><a href="/project-1/working-with-the-brushless-dc-motor/">Programming the Motor</a></li>
+</ul>
+</li>
+<li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="/project-1/srf04-sonar/">SRF04 Sonar</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="/project-1/control-flow-in-the-hover-station/">Hover Station Control Flow</a></li>
+<li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="/project-1/wireless-radio/">Wireless Radios</a></li>
+<li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="/project-1/logitech-game-pad/">Logitech Game Pad</a></li>
+<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="/project-1/source-code/">Full Source Code</a></li>
+<li id="menu-item-242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-242"><a href="/project-1/project-video/">Project Video</a></li>
+</ul></div></aside>		</div><!-- #secondary .widget-area -->
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+			<div id="site-generator">
+								<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+			</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-195eac1ecf30c9a86c9e59c04e8b951c">
+	</div>
+	<div class="grofile-hash-map-cd53d2655345e21e5a90562da0129a00">
+	</div>
+	<div class="grofile-hash-map-04a745f21861a9fba78169d222bb59f8">
+	</div>
+	<div class="grofile-hash-map-69fb31ba5cebda59f4e86aa3f560dfc3">
+	</div>
+	<div class="grofile-hash-map-151a703fd03607ba326b7e515768c789">
+	</div>
+	<div class="grofile-hash-map-85fb63c63e68affa7fee7a50da4fb7e8">
+	</div>
+	<div class="grofile-hash-map-1d1a14ceaa1de9c587fccebacd3814c1">
+	</div>
+	<div class="grofile-hash-map-db431637c93561720ace7e6283068110">
+	</div>
+	</div>
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201739'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Sepaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.js?ver=1.5.7'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201739.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.7',blog:'31972707',post:'101',tz:'-7',srv:'robots.dacloughb.com'} ]);
+	_stq.push([ 'clickTrackerInit', '31972707', '101' ]);
+</script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+</body>
+</html>

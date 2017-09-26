@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) & !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Testing Hover Capability | Mechatronics Project Site</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/twentyeleven/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mechatronics Project Site &raquo; Testing Hover Capability Comments Feed" href="/project-2/testing-hover-capability/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='fancybox-css'  href='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css?ver=1.5.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='jetpack_css-css'  href='/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.7' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-28621799-2', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.8.2" />
+<link rel="canonical" href="/project-2/testing-hover-capability/" />
+<link rel='shortlink' href='http://wp.me/P2a9yP-83' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fproject-2%2Ftesting-hover-capability%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fproject-2%2Ftesting-hover-capability%2F&#038;format=xml" />
+<link rel="stylesheet" type="text/css" href="/wp-content/plugins/wp-code-highlight/css/wp-code-highlight.css" media="screen" />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Testing Hover Capability" />
+<meta property="og:url" content="/project-2/testing-hover-capability/" />
+<meta property="og:description" content="After attaching motors to the copter frame, mounting the props, and calibrating the ESCs, we were ready to test if the copter could lift its weight.  To control the motors, the ESCs were wired to t…" />
+<meta property="article:published_time" content="2012-04-24T23:52:50+00:00" />
+<meta property="article:modified_time" content="2016-01-19T07:44:41+00:00" />
+<meta property="og:site_name" content="Mechatronics Project Site" />
+<meta property="og:image" content="/wp-content/uploads/2012/03/IMG_0512-300x225.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery ');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+</head>
+
+<body class="page-template page-template-sidebar-page page-template-sidebar-page-php page page-id-499 page-child parent-pageid-271 single-author two-column right-sidebar">
+<div id="page" class="hfeed">
+	<header id="branding" role="banner">
+			<hgroup>
+				<h1 id="site-title"><span><a href="/" rel="home">Mechatronics Project Site</a></span></h1>
+				<h2 id="site-description">Group Project Site for SEng466 at the University of Victoria</h2>
+			</hgroup>
+
+						<a href="/">
+									<img src="/wp-content/uploads/2012/04/cropped-render-1.jpg" width="1000" height="288" alt="Mechatronics Project Site" />
+							</a>
+			
+								<form method="get" id="searchform" action="/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			
+			<nav id="access" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+												<div class="menu"><ul>
+<li ><a href="/">Home</a></li><li class="page_item page-item-12 page_item_has_children"><a href="/project-1/">Project 1</a>
+<ul class='children'>
+	<li class="page_item page-item-14"><a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/">Arduino Eclipse Development Environment for Mac OS X</a></li>
+	<li class="page_item page-item-112"><a href="/project-1/component-based-design-and-process/">Component Oriented Design Process</a></li>
+	<li class="page_item page-item-113"><a href="/project-1/control-flow-in-the-hover-station/">Control flow in the Hover Station</a></li>
+	<li class="page_item page-item-91"><a href="/project-1/dc-motors/">DC Motors</a></li>
+	<li class="page_item page-item-137"><a href="/project-1/source-code/">Full Source Code</a></li>
+	<li class="page_item page-item-164"><a href="/project-1/logitech-game-pad/">Logitech Game Pad</a></li>
+	<li class="page_item page-item-37"><a href="/project-1/mechanical-design/">Mechanical Design</a></li>
+	<li class="page_item page-item-202"><a href="/project-1/project-video/">Project Video</a></li>
+	<li class="page_item page-item-83"><a href="/project-1/srf04-sonar/">SRF04 Sonar</a></li>
+	<li class="page_item page-item-78"><a href="/project-1/wireless-radio/">Wireless Radio</a></li>
+	<li class="page_item page-item-101"><a href="/project-1/working-with-the-brushless-dc-motor/">Working with the Brushless DC Motor</a></li>
+</ul>
+</li>
+<li class="page_item page-item-271 page_item_has_children current_page_ancestor current_page_parent"><a href="/project-2/">Project 2</a>
+<ul class='children'>
+	<li class="page_item page-item-301"><a href="/project-2/9-degrees-of-freedom-sensor/">9 Degrees of Freedom Sensor</a></li>
+	<li class="page_item page-item-275"><a href="/project-2/esc-calibration-programming/">ESC Calibration &#038; Programming</a></li>
+	<li class="page_item page-item-295 page_item_has_children"><a href="/project-2/mechanical-design/">Mechanical Design</a>
+	<ul class='children'>
+		<li class="page_item page-item-346"><a href="/project-2/mechanical-design/cad-model-and-simulations/">CAD Models and Simulations</a></li>
+		<li class="page_item page-item-357"><a href="/project-2/mechanical-design/manufacting-the-parts/">Manufacturing the Parts</a></li>
+		<li class="page_item page-item-361"><a href="/project-2/mechanical-design/assembly/">Assembly</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-506"><a href="/project-2/project-2-demonstration-video/">Project 2 Demonstration Video</a></li>
+	<li class="page_item page-item-499 current_page_item"><a href="/project-2/testing-hover-capability/">Testing Hover Capability</a></li>
+</ul>
+</li>
+<li class="page_item page-item-461 page_item_has_children"><a href="/project-3/">Project 3</a>
+<ul class='children'>
+	<li class="page_item page-item-539"><a href="/project-3/project-3-demonstration-videos/">Demonstration Videos</a></li>
+	<li class="page_item page-item-677"><a href="/project-3/motor-orientation/">Motor Orientations</a></li>
+	<li class="page_item page-item-572"><a href="/project-3/pid-tuning-flight-testing/">PID Tuning &#038; Flight Testing</a></li>
+	<li class="page_item page-item-569"><a href="/project-3/possible-improvements/">Possible Improvements</a></li>
+	<li class="page_item page-item-561 page_item_has_children"><a href="/project-3/quadcopter-software/">Quadcopter Software</a>
+	<ul class='children'>
+		<li class="page_item page-item-563"><a href="/project-3/quadcopter-software/motor-control/">Motor Speed Control Hook</a></li>
+		<li class="page_item page-item-582"><a href="/project-3/quadcopter-software/gamepad-control/">Remote Station &#038; Gamepad Control</a></li>
+		<li class="page_item page-item-698"><a href="/project-3/quadcopter-software/setup-video-demonstration/">Setup Video Demonstration</a></li>
+		<li class="page_item page-item-580"><a href="/project-3/quadcopter-software/wireless-radio/">Wireless Radio Hook</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-547"><a href="/project-3/troubleshooting/">Troubleshooting</a></li>
+	<li class="page_item page-item-379"><a href="/project-3/wiring-schematic/">Wiring Schematic</a></li>
+</ul>
+</li>
+</ul></div>
+			</nav><!-- #access -->
+	</header><!-- #branding -->
+
+
+	<div id="main">
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-499" class="post-499 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Testing Hover Capability</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>After attaching motors to the copter frame, mounting the props, and calibrating the ESCs, we were ready to test if the copter could lift its weight.  To control the motors, the ESCs were wired to the Arduino Uno via a breadboard placed adjacent to the quadcopter.  Motors 1, 2, 3, 4 were attached to Uno pins 3, 5, 6, and 10 respectively.  The Uno has 6 pins which can generate pulse width modulation (PWM), however, and any could be used.</p>
+<h2>Testing Code</h2>
+<p>To test the hovering potential of the copter, a small program to control all motors simultaneously was written using the Arduino IDE v1.0.  The program allowed an operator to control the PWM signals to each individual motor or to all at once by listening to commands on a serial connection.  The Arduino code is below.</p>
+<p>Since the Mystery ESCs can read basic servo signals, the Servo.h Arduino library was used for simplicity.  The motors were calibrated to have a low signal of 700 microseconds and a maximum signal of 2000 microseconds.</p>
+<pre class="wp-code-highlight prettyprint">#include &amp;lt;Servo.h&amp;gt;
+
+#define MAX_SIGNAL 2000
+#define MIN_SIGNAL 700
+
+#define M1 3
+#define M2 5
+#define M3 6
+#define M4 10
+
+Servo motor1;
+Servo motor2;
+Servo motor3;
+Servo motor4;
+
+int speed1, speed2, speed3, speed4;
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println(&quot;Program begin...&quot;);
+  Serial.println(&quot;This program will test the 4 motors.&quot;);
+
+  motor1.attach(M1);
+  motor2.attach(M2);
+  motor3.attach(M3);
+  motor4.attach(M4);
+
+  motor1.writeMicroseconds(MIN_SIGNAL);
+  motor2.writeMicroseconds(MIN_SIGNAL);
+  motor3.writeMicroseconds(MIN_SIGNAL);
+  motor4.writeMicroseconds(MIN_SIGNAL);
+
+  Serial.println(&quot;Sending minimum signal. Power on motor and wait for beeps.&quot;);
+  delay(4000);
+
+  Serial.println(&quot;After beeps, type a signal length terminated by m and the motor number to motor. For example,&quot;);
+  Serial.print(MIN_SIGNAL);
+  Serial.println(&quot;m1 to stop the motor 1. ma is for all motors.&quot;);
+}
+
+void stop() {
+  Serial.println(&quot;stoping...&quot;);
+  motor1.writeMicroseconds(MIN_SIGNAL);
+  motor2.writeMicroseconds(MIN_SIGNAL);
+  motor3.writeMicroseconds(MIN_SIGNAL);
+  motor4.writeMicroseconds(MIN_SIGNAL);
+  speed1 = MIN_SIGNAL;
+  speed2 = MIN_SIGNAL;
+  speed3 = MIN_SIGNAL;
+  speed4 = MIN_SIGNAL;
+}
+
+void loop() {
+  int input, number;
+
+  // Wait for input
+  if (!Serial.available()) return;
+
+  input = Serial.read();
+  // emergency stop command is &#039;, right next to enter key
+  if (input == &#039;\&#039;&#039;) {
+    stop();
+    return;
+  }
+
+  // Convert string to integer. String terminated with m (for microseconds).
+  number = input - &#039;0&#039;;
+  while ((input = Serial.read()) != &#039;m&#039;) {    
+    if (input == -1) continue;
+
+    number *= 10;
+    number += input - &#039;0&#039;;
+  }
+
+  while ((input = Serial.read()) == -1);
+
+  switch (input) {
+   case &#039;a&#039;:
+     speed1 = number;
+     speed2 = number;
+     speed3 = number;
+     speed4 = number;
+     break;
+   case &#039;1&#039;:
+     speed1 = number;
+     break;
+   case &#039;2&#039;:
+     speed2 = number;
+     break;
+   case &#039;3&#039;:
+     speed3 = number;
+     break;
+   case &#039;4&#039;:
+     speed4 = number;
+     break;
+   default:
+     break;
+  }
+
+  Serial.print(&quot;Now writing: &quot;);
+  Serial.print(speed1);
+  Serial.print(&quot; &quot;);
+  Serial.print(speed2);
+  Serial.print(&quot; &quot;);
+  Serial.print(speed3);
+  Serial.print(&quot; &quot;);
+  Serial.println(speed4);
+
+  motor1.writeMicroseconds(speed1);
+  motor2.writeMicroseconds(speed2);
+  motor3.writeMicroseconds(speed3);
+  motor4.writeMicroseconds(speed4);
+}</pre>
+<p>The program works by sending commands over Serial to the Uno.  In the Arduino serial monitor, a user should send a command in the form &lt;speed&gt;m&lt;motor&gt; where &lt;speed&gt; can range from 700-2000, and &lt;motor&gt; can be set from 1 to 4 for each motor or &#8216;a&#8217; to command all motors.  For example, a command to turn on all motors at 40% speed [0.4*(2000-700) + 700 = 1220 microseconds] would be &#8220;1220ma&#8221; without quotes.</p>
+<p>A stop all motors command can be issued by simply sending the apostrophe (&#8216;) character, located conveniently next to the enter key on most keyboards.</p>
+<h2>Testing</h2>
+<p>Once the program was written and verified to work correctly, we needed to tie down the copter so that it would not fly away and crash.  An ad hoc solution consisting of a large piece of cardboard, duct tape, and four small ropes easily accomplished this.  Once secured to the cardboard with a some leeway to hover, the quadcopter was ready for some basic tests.</p>
+<p>After connecting the Arduino to a laptop vis USB and commanding all motors to stop, we connected the battery.  Once powered on, each ESC emits several tones indicating the number of battery cells detected.  To prevent injury, all present team member wore protective eyewear.</p>
+<p>Once powered on, we began running the motors at about 15% speed (900 microseconds).  After verifying that all motors were functioning correctly, the motor speed was increased in increments of 100 microseconds until the copter lifted completely off the ground.  The picture below demonstrates this result.  To see a video of this test, visit the project demonstration video page.</p>
+<p><a href="/wp-content/uploads/2012/03/IMG_0512.jpg"><img class="alignnone  wp-image-469" title="Copter Hovering at a Servo speed of 1200 microseconds." src="/wp-content/uploads/2012/03/IMG_0512-300x225.jpg" alt="" width="500" srcset="/wp-content/uploads/2012/03/IMG_0512-300x225.jpg 300w, /wp-content/uploads/2012/03/IMG_0512-400x300.jpg 400w, /wp-content/uploads/2012/03/IMG_0512.jpg 960w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<h2>Problems</h2>
+<p>While running all the motors, one appeared to stop working.  After attaching the motor to another ESC with no problems, we determined that one of our ESCs was malfunctioning.  Fortunately, other ESCs were available in the lab to replace the fault ESC, and additional ESCs were ordered in case of any future problems.</p>
+<p>One prop blad also broke in half when the motors were run at a very high speed.  Running the motors at 60% speed caused one arm of the copter to dislodge from the frame, causing the prop to hit the ground, snap, and fly across the lab.</p>
+<h2>Results</h2>
+<p>The quadcopter successfully lifted at about 40% of the motor speed (1200 microseconds).  This was a very good result because a lower hover speed will allow the quadcopter to use higher motor speeds for more accurate control and adjustments during flight.  Therefore, the quadcopter should be able to easily maneuver itself.</p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-499 -->
+
+						<div id="comments">
+	
+	
+			<h2 id="comments-title">
+			2 thoughts on &ldquo;<span>Testing Hover Capability</span>&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-46868">
+		<article id="comment-46868" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/1ce222c3edc64c82d677012ab676af58?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/1ce222c3edc64c82d677012ab676af58?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.bestquadcopterpro.com/' rel='external nofollow' class='url'>Alan</a></span> on <a href="/project-2/testing-hover-capability/#comment-46868"><time datetime="2014-06-01T18:49:27+00:00">June 1, 2014 at 6:49 pm</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Interesting test project. I have found problems with ESC units before too. They are problematic and glitchy.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://www.eevance.com/News/f062936a96d3c8bd.html' rel='external nofollow' class='url'>は素晴らしい万「FUN」の型の表をシンクロ以外にも、Swatch香港区開設の首の間の旗艦店を開店し、強力な販売網を構築。スーパーコピーブランドMr . Kevin Rollenhagen衆がナンシーだと、城の女</a></p>
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+				<p class="nocomments">Comments are closed.</p>
+		
+	
+	
+</div><!-- #comments -->
+
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="nav_menu-5" class="widget widget_nav_menu"><h3 class="widget-title">Project 3 &#8211; Copter Software &#038; Testing</h3><div class="menu-project-3-container"><ul id="menu-project-3" class="menu"><li id="menu-item-464" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a href="/project-3/">Introduction &#038; Overview</a></li>
+<li id="menu-item-686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-686"><a href="/project-3/motor-orientation/">Motor Orientations</a></li>
+<li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-576"><a href="/project-3/quadcopter-software/">Quadcopter Software</a>
+<ul  class="sub-menu">
+	<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="/project-3/quadcopter-software/motor-control/">Motor Speed Control Hook</a></li>
+	<li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="/project-3/quadcopter-software/wireless-radio/">Wireless Radio Hook</a></li>
+	<li id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-669"><a href="/project-3/quadcopter-software/gamepad-control/">Remote Station &#038; Gamepad Control</a></li>
+	<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="/project-3/quadcopter-software/setup-video-demonstration/">Software Setup Videos</a></li>
+	<li id="menu-item-556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-556"><a href="https://github.com/2012SEng466/copter" onclick="__gaTracker('send', 'event', 'outbound-widget', 'https://github.com/2012SEng466/copter', 'Copter Source Code');">Copter Source Code</a></li>
+</ul>
+</li>
+<li id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-574"><a href="/project-3/pid-tuning-flight-testing/">PID Tuning &#038; Flight Testing</a></li>
+<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-555"><a href="/project-3/troubleshooting/">Troubleshooting</a></li>
+<li id="menu-item-512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-512"><a href="/project-3/wiring-schematic/">Wiring Schematic</a></li>
+<li id="menu-item-575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-575"><a href="/project-3/possible-improvements/">Possible Improvements</a></li>
+<li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-554"><a href="/project-3/project-3-demonstration-videos/">Flight Videos</a></li>
+</ul></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu"><h3 class="widget-title">Project 2 &#8211; Copter Mechanics &#038; Electronics</h3><div class="menu-project-2-container"><ul id="menu-project-2" class="menu"><li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-289"><a href="/project-2/">Introduction &#038; Overview</a></li>
+<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="/project-2/esc-calibration-programming/">ESC Calibration &#038; Programming</a></li>
+<li id="menu-item-511" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-511"><a href="/project-2/9-degrees-of-freedom-sensor/">9 Degrees of Freedom Sensor</a></li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-367"><a href="/project-2/mechanical-design/">Mechanical Design</a>
+<ul  class="sub-menu">
+	<li id="menu-item-370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-370"><a href="/project-2/mechanical-design/cad-model-and-simulations/">CAD Models and Simulations</a></li>
+	<li id="menu-item-369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-369"><a href="/project-2/mechanical-design/manufacting-the-parts/">Manufacturing the Parts</a></li>
+	<li id="menu-item-368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-368"><a href="/project-2/mechanical-design/assembly/">Assembly</a></li>
+</ul>
+</li>
+<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-499 current_page_item menu-item-510"><a href="/project-2/testing-hover-capability/">Testing Hover Capability</a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-509"><a href="/project-2/project-2-demonstration-video/">Project 2 Demonstration Video</a></li>
+</ul></div></aside><aside id="nav_menu-3" class="widget widget_nav_menu"><h3 class="widget-title">Project 1</h3><div class="menu-project-1-container"><ul id="menu-project-1" class="menu"><li id="menu-item-238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238"><a href="/project-1/">Introduction &#038; Overview</a></li>
+<li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237"><a href="/project-1/setting-up-the-arduino-eclipse-environment-on-mac-os-x-lion/">Development Environment</a></li>
+<li id="menu-item-228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-228"><a href="/project-1/component-based-design-and-process/">Component Oriented Design Process</a></li>
+<li id="menu-item-236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-236"><a href="/project-1/mechanical-design/">Mechanical Design</a></li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-230"><a href="/project-1/dc-motors/">DC Motors</a>
+<ul  class="sub-menu">
+	<li id="menu-item-232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"><a href="/project-1/working-with-the-brushless-dc-motor/">Programming the Motor</a></li>
+</ul>
+</li>
+<li id="menu-item-231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-231"><a href="/project-1/srf04-sonar/">SRF04 Sonar</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="/project-1/control-flow-in-the-hover-station/">Hover Station Control Flow</a></li>
+<li id="menu-item-233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-233"><a href="/project-1/wireless-radio/">Wireless Radios</a></li>
+<li id="menu-item-234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234"><a href="/project-1/logitech-game-pad/">Logitech Game Pad</a></li>
+<li id="menu-item-235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-235"><a href="/project-1/source-code/">Full Source Code</a></li>
+<li id="menu-item-242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-242"><a href="/project-1/project-video/">Project Video</a></li>
+</ul></div></aside>		</div><!-- #secondary .widget-area -->
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" role="contentinfo">
+
+			
+
+			<div id="site-generator">
+								<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+			</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-1ce222c3edc64c82d677012ab676af58">
+	</div>
+	</div>
+<script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201739'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Sepaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.8.2'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.js?ver=1.5.7'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/jquery.easing.pack.js?ver=1.3'></script>
+<script type='text/javascript' src='/wp-content/plugins/easy-fancybox/jquery.mousewheel.min.js?ver=3.1.12'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201739.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.7',blog:'31972707',post:'499',tz:'-7',srv:'robots.dacloughb.com'} ]);
+	_stq.push([ 'clickTrackerInit', '31972707', '499' ]);
+</script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+
+</body>
+</html>
